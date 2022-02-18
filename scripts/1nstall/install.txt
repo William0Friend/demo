@@ -1,0 +1,108 @@
+#!/bin/sh
+
+sudo apt install \
+wmctrl debugedit librpm9 librpmbuild9 librpmio9 librpmsign9 rpm rpm-common rpm2cpio dgen tipp10 octave genius remotetrx libctpl2 whichman wiff hwb wfuzz swish-e whohas staden hwb vulture vbrfix shellia unhide unhide.rb snap stda sibelia sibelia-data pompem rubick fd-find safecopy rubiks stealth stealh-doc sixer sigil sigil-data rmlint rmlint-doc rmlint-gui ries python3-git-doc python3-git scanmem rpl recover-dm refind progress  nutsqlite perfortate openguides openuniverse netdiag netdiscover netwox netwox-doc mwic msort msort-gui ninvaders nast mysqltuner mimefilter mdm liquidprompt logtail john john-data jdupe javahelper ipcalc iprange iwyu  ht holes forensics-all forensics-all-gui forensics-extras hachoir headache hexcompare gucharmap growlight grabc  gpart glimpse gimp gimp-plugins-registry fwlogwatch gcolor3 fatrace fdupes findbugs findutils einstien duperemove duff dpkg-www doc-debian dnscache dlocate diskscan dislocker debian-goodies devilspie dnsmap deborphan codelight codelight-plugins cdde brutespray bruteforce-wallet bruteforce-luks bruteforce-salted-openssl bless binstats bittwist bfs awstats aide aide-common aide-dynamic ven amanda-client amanda-server
+repo hashcat
+aesfix - tool for correcting bit errors in an AES key schedule
+aeskeyfind - tool for locating AES keys in a captured memory image
+afflib-tools - Advanced Forensics Format Library (utilities)
+libafflib-dev - Advanced Forensics Format Library (development files)
+libafflib0v5 - Advanced Forensics Format Library
+autopsy - graphical interface to SleuthKit
+bilibop-lockfs - lock filesystems and write changes into RAM
+bruteforce-luks - Try to find a password of a LUKS encrypted volume
+bruteforce-salted-openssl - try to find the passphrase for files encrypted with OpenSSL
+cewl - custom word list generator
+chaosreader - trace network sessions and export it to html format
+dc3dd - patched version of GNU dd with forensic features
+dcfldd - enhanced version of dd for forensics and security
+python3-dfdatetime - Digital Forensics date and time library for Python 3
+python3-dfvfs - Digital Forensics Virtual File System
+python3-dfwinreg - Digital Forensics Windows Registry library for Python 3
+disktype - detection of content format of a disk or disk image
+dislocker - read/write encrypted BitLocker volumes
+dnsenum - tool to enumerate domain DNS information
+dnsmap - DNS domain name brute forcing tool
+ed2k-hash - tool for generating ed2k-links
+exifprobe - read metadata from digital pictures
+ext3grep - tool to help recover deleted files on ext3 filesystems
+ext4magic - recover deleted files from ext3 or ext4 partitions
+fcrackzip - password cracker for zip archives
+forensics-all - Debian Forensics Environment - essential components (metapackage)
+forensics-all-gui - Debian Forensics Environment - GUI components (metapackage)
+forensics-colorize - show differences between files using color graphics
+forensics-extra - Forensics Environment - extra console components (metapackage)
+forensics-extra-gui - Forensics Environment - extra GUI components (metapackage)
+forensics-full - Full forensics station (metapackage)
+forensics-samples-all - Set of files to help learn/test forensics tools and techniques (metapackage)
+forensics-samples-btrfs - Set of files to help learn/test forensics tools and techniques (btrfs)
+forensics-samples-exfat - Set of files to help learn/test forensics tools and techniques (exFAT)
+forensics-samples-ext2 - Set of files to help learn/test forensics tools and techniques (ext2)
+forensics-samples-ext4 - Set of files to help learn/test forensics tools and techniques (ext4)
+forensics-samples-files - Set of files to help learn/test forensics tools and techniques (files)
+forensics-samples-multiple - Set of files to help learn/test forensics tools and techniques (multiple FS)
+forensics-samples-ntfs - Set of files to help learn/test forensics tools and techniques (ntfs)
+forensics-samples-tools - Set of files to help learn/test forensics tools and techniques (tools)
+forensics-samples-vfat - Set of files to help learn/test forensics tools and techniques (vfat)
+galleta - Internet Explorer cookie forensic analysis tool
+gifshuffle - Steganography program to gif images
+gpart - Guess PC disk partition table, find lost partitions
+grokevt - scripts for reading Microsoft Windows event log files
+hashdeep - recursively compute hashsums or piecewise hashings
+hashrat - hashing tool supporting several hashes and recursivity
+hexcompare - utility to compare and identify binary files
+hexedit - viewer and editor in hexadecimal or ASCII for files or devices
+ewf-tools - collection of tools for reading and writing EWF files
+libewf-dev - support for Expert Witness Compression format (development)
+libewf2 - library with support for Expert Witness Compression Format
+python3-libewf - support for Expert Witness Compression format -- Python 3 bindings
+lime-forensics-dkms - kernel module to memory dump (DKMS)
+mac-robber - collects data about allocated files in mounted filesystems
+magicrescue - recover files by looking for magic bytes
+memdump - utility to dump memory contents to standard output
+metacam - extract EXIF information from digital camera files
+missidentify - find win32 applications
+myrescue - rescue data from damaged disks
+nasty - tool which helps you to recover your GPG passphrase
+nbtscan - scan networks searching for NetBIOS information
+outguess - universal steganographic tool
+parsero - Audit tool for robots.txt of a site
+pasco - Internet Explorer cache forensic analysis tool
+pdfcrack - PDF files password cracker
+pipebench - measure the speed of stdin/stdout communication
+pompem - Exploit and Vulnerability Finder
+recoverdm - recover files on disks with damaged sectors
+recoverjpeg - recover JFIF (JPEG) pictures and MOV movies
+libregfi-dev - utility to analysis for Windows NT-based registry (devel files)
+libregfi1 - utility to analysis for Windows NT-based registry (shared library)
+reglookup - utility to analysis for Windows NT-based registry
+reglookup-doc - developer documentation for libregfi and python-pyregfi
+rifiuti - MS Windows recycle bin analysis tool
+rifiuti2 - replacement for rifiuti, a MS Windows recycle bin analysis tool
+rsakeyfind - locates BER-encoded RSA private keys in memory images
+safecopy - data recovery tool for problematic or damaged media
+scalpel - fast filesystem-independent file recovery
+scrounge-ntfs - Data recovery program for NTFS filesystems
+secure-delete - tools to wipe files, free disk space, swap and memory
+shed - simple hex editor with a pico-style interface
+libtsk-dev - library for forensics analysis (development files)
+libtsk19 - library for forensics analysis on volume and filesystem data
+sleuthkit - tools for forensics analysis on volume and filesystem data
+ssdeep - recursive piecewise hashing tool
+sslsplit - transparent and scalable SSL/TLS interception
+steghide - steganography hiding tool
+stegsnow - steganography using ASCII files
+stressant-meta - stress-testing, benchmarking and recovery tools (meta-package)
+tableau-parm - tableau write-blocking bridge query/command utility
+tcpxtract - extract files from network traffic based on file signatures
+testdisk - Partition scanner and disk recovery tool, and PhotoRec file recovery tool
+testdisk-dbg - Partition scanner and disk recovery tool, and PhotoRec file recovery tool
+undbx - tool to extract, recover and undelete e-mail messages from .dbx files
+unhide - Forensic tool to find hidden processes and ports
+unhide.rb - Forensics tool to find processes hidden by rootkits
+vast - network telemetry engine for data-driven security investigations
+vast-dev - header files for VAST plugin development
+vinetto - forensics tool to examine Thumbs.db files
+winregfs - Windows registry FUSE filesystem
+wipe - secure file deletion
+grr-client-templates - incident response framework - pre-built client templates

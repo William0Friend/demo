@@ -1,0 +1,486 @@
+Package: forensics-all
+Version: 3.27
+Priority: optional
+Section: metapackages
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 17.4 kB
+Depends: acct, aesfix, aeskeyfind, afflib-tools, aircrack-ng, arp-scan, binwalk, braa, bruteforce-salted-openssl, bruteforce-wallet, brutespray, btscanner, bully, capstone-tool, ccrypt, cewl, chaosreader, chkrootkit, cowpatty, crack | crack-md5, dc3dd, dirb, dislocker, dnsrecon, doona, dsniff, ed2k-hash, ewf-tools, exifprobe, ext4magic, extundelete, fcrackzip, forensic-artifacts, forensics-colorize, galleta, grokevt, hashdeep, hashid, hashrat, hydra, mac-robber, magicrescue, maskprocessor, masscan, mdk3, mdk4, medusa, memdump, metacam, mfcuk, mfoc, missidentify, myrescue, nasty, nbtscan, ncat, ncrack, ndiff, nmap, o-saft, ophcrack-cli, outguess, pasco, patator, pff-tools, pipebench, pixiewps, pnscan, polenum, pompem, recoverdm, recoverjpeg, reglookup, rephrase, rfdump, rhash, rifiuti, rifiuti2, rkhunter, rsakeyfind, safecopy, samdump2, scalpel, scrounge-ntfs, shed, sleuthkit, smbmap, snowdrop, ssdeep, ssldump, statsprocessor, steghide, stegsnow, sucrack, tableau-parm, tcpick, testssl.sh, undbx, unhide, unhide.rb, vinetto, wapiti, wfuzz, wifite, winregfs, wipe, xmount, yara
+Recommends: de4dot, ext3grep, gpart, hashcat, ike-scan, plaso, radare2, rekall-core
+Suggests: forensics-all-gui, forensics-extra, forensics-extra-gui, forensics-full, forensics-samples-all, forensics-samples-btrfs, forensics-samples-exfat, forensics-samples-ext2, forensics-samples-ext4, forensics-samples-files, forensics-samples-multiple, forensics-samples-ntfs, forensics-samples-tools, forensics-samples-vfat
+Download-Size: 10.8 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Debian Forensics Environment - essential components (metapackage)
+ This package provides the core components for a forensics environment.
+ All here available tools are packaged by Debian Security Tools Team.
+ This metapackage includes the most programs to data recovery, rootkit
+ and exploit search, filesystems and memory analysis, image acquisition,
+ volume inspection, special actions over the hardware and many other
+ activities.
+ .
+ The following packages were included in this metapackage:
+ .
+   acct, aesfix, aeskeyfind, afflib-tools, aircrack-ng, arp-scan,
+   binwalk, braa, bruteforce-salted-openssl, bruteforce-wallet,
+   brutespray, btscanner, bully, capstone-tool, ccrypt, cewl,
+   chaosreader, chkrootkit, cowpatty, crack or crack-md5, dc3dd, dirb,
+   dislocker, dnsrecon, doona, dsniff, ed2k-hash, exifprobe, ext4magic,
+   extundelete, ewf-tools, fcrackzip, forensic-artifacts,
+   forensics-colorize, galleta, grokevt, hashdeep, hashid, hashrat,
+   hydra, mac-robber, magicrescue, maskprocessor, masscan, mdk3, mdk4,
+   medusa, memdump, metacam, mfcuk, mfoc, missidentify, myrescue,
+   nasty, nbtscan, ncat, ncrack, ndiff, nmap, o-saft, ophcrack-cli,
+   outguess, pasco, patator, pff-tools, pipebench, pixiewps, pnscan,
+   polenum, pompem, recoverdm, recoverjpeg, reglookup, rephrase,
+   rfdump, rhash, rifiuti, rifiuti2, rkhunter, rsakeyfind, safecopy,
+   samdump2, scalpel, scrounge-ntfs, shed, sleuthkit, smbmap, snowdrop,
+   ssdeep, ssldump, statsprocessor, steghide, stegsnow, sucrack,
+   tableau-parm, tcpick, testssl.sh, undbx, unhide, unhide.rb, vinetto,
+   wapiti, wfuzz, wifite, winregfs, wipe, xmount, yara
+ .
+ This metapackage is useful for pentesters, ethical hackers and forensics
+ experts.
+
+Package: doscan
+Version: 0.3.3-1.1
+Priority: optional
+Section: net
+Maintainer: Florian Weimer <fw@deneb.enyo.de>
+Installed-Size: 124 kB
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libpcre3, libstdc++6 (>= 5.2)
+Homepage: http://www.enyo.de/fw/software/doscan/
+Tag: interface::commandline, network::scanner, role::program, scope::utility,
+ use::scanning
+Download-Size: 47.8 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: port scanner for discovering services on large networks
+ doscan is a tool to discover TCP services on your network. It is
+ designed for scanning a single ports on a large network.  doscan
+ contacts many hosts in parallel, using standard TCP sockets provided
+ by the operating system.  It is possible to send strings to remote
+ hosts, and collect the banners they return.
+ .
+ There are better tools for scanning many ports on a small set of
+ hosts, for example nmap.
+
+Package: termshark
+Version: 2.1.1-1
+Built-Using: golang-1.15 (= 1.15.5-1), golang-fsnotify (= 1.4.9-2), golang-github-adam-hanna-arrayoperations (= 0.2.6-2), golang-github-antchfx-xmlquery (= 1.2.1-2), golang-github-antchfx-xpath (= 1.1.2-2), golang-github-blang-semver (= 3.6.1-1), golang-github-gcla-deep (= 1.0.2-2), golang-github-gcla-gowid (= 1.1.0+git20200202.45eed27-1), golang-github-gdamore-encoding (= 1.0.0-2), golang-github-gdamore-tcell (= 1.3.0-2), golang-github-golang-groupcache (= 0.0~git20171101.84a468c-1), golang-github-hashicorp-golang-lru (= 0.5.4-1), golang-github-hashicorp-hcl (= 1.0.0-1), golang-github-lucasb-eyer-go-colorful (= 1.0.3-1), golang-github-magiconair-properties (= 1.8.1+really1.8.1-1), golang-github-mattn-go-isatty (= 0.0.12-1), golang-github-mattn-go-runewidth (= 0.0.9-1), golang-github-mitchellh-mapstructure (= 1.3.3-1), golang-github-mreiferson-go-snappystream (= 0.2.3-2), golang-github-pelletier-go-toml (= 1.8.1-1), golang-github-pkg-errors (= 0.9.1-1), golang-github-pkg-term (= 1.1.0-2), golang-github-shibukawa-configdir (= 0.0~git20170330.e180dbd-1), golang-github-spf13-afero (= 1.4.1-1), golang-github-spf13-cast (= 1.3.1-1), golang-github-spf13-jwalterweatherman (= 1.1.0+really1.1.0-1), golang-github-spf13-pflag (= 1.0.5-2), golang-github-spf13-viper (= 1.7.1-1), golang-github-subosito-gotenv (= 1.2.0+git20190917.de67a66-2), golang-github-tevino-abool (= 0.0~git20170917.9b9efcf-2), golang-go-flags (= 1.4.0-2), golang-golang-x-net (= 1:0.0+git20201031.ff519b6+dfsg-1), golang-golang-x-sys (= 0.0~git20201101.da20708-1), golang-golang-x-text (= 0.3.4-1), golang-gopkg-ini.v1 (= 1.57.0-1), golang-logrus (= 1.6.0-1), golang-yaml.v2 (= 2.3.0-1)
+Priority: optional
+Section: devel
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Installed-Size: 14.5 MB
+Depends: libc6 (>= 2.4), tshark, wireshark-common
+Homepage: https://github.com/gcla/termshark
+Download-Size: 4,116 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Terminal UI for tshark, inspired by Wireshark
+ If you're debugging on a remote machine with a large pcap and no desire
+ to scp it back to your desktop, termshark can help!
+ .
+ Features:
+  • Read pcap files or sniff live interfaces (where tshark is permitted)
+  • Inspect each packet using familiar Wireshark-inspired views
+  • Filter pcaps or live captures using Wireshark's display filters
+  • Copy ranges of packets to the clipboard from the terminal
+  • Written in Go, compiles to a single executable on each platform
+
+Package: wireshark-qt
+Version: 3.4.0-1
+Priority: optional
+Section: net
+Source: wireshark
+Maintainer: Balint Reczey <rbalint@ubuntu.com>
+Installed-Size: 8,410 kB
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 3.0), libgcrypt20 (>= 1.8.0), libglib2.0-0 (>= 2.35.8), libminizip1 (>= 1.1), libnl-3-200 (>= 3.2.21), libnl-genl-3-200 (>= 3.2.7), libnl-route-3-200 (>= 3.2.7), libpcap0.8 (>= 1.5.1), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5multimedia5 (>= 5.6.0~beta), libqt5printsupport5 (>= 5.2.0), libqt5widgets5 (>= 5.15.1), libspeexdsp1 (>= 1.2~beta3.2-1), libstdc++6 (>= 5.2), libwireshark14 (>= 3.3.0), libwiretap11 (>= 3.3.0), libwsutil12 (>= 3.3.0), zlib1g (>= 1:1.1.4), wireshark-common (= 3.4.0-1), libqt5svg5
+Recommends: libqt5multimedia5-plugins
+Breaks: ethereal (<< 1.0.0-3), wireshark (<< 2.0.0~), wireshark-gtk (<< 3.0.0~)
+Replaces: ethereal (<< 1.0.0-3), wireshark (<< 2.0.0~), wireshark-gtk (<< 3.0.0~)
+Homepage: https://www.wireshark.org/
+Tag: uitoolkit::qt
+Download-Size: 3,851 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: network traffic analyzer - Qt version
+ Wireshark is a network "sniffer" - a tool that captures and analyzes
+ packets off the wire. Wireshark can decode too many protocols to list
+ here.
+ .
+ This package provides the Qt version of Wireshark.
+
+Package: sqlmap
+Version: 1.4.12-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 10.7 MB
+Depends: python3:any, python3-magic
+Homepage: http://sqlmap.org/
+Download-Size: 6,430 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: automatic SQL injection tool
+ sqlmap goal is to detect and take advantage of SQL injection
+ vulnerabilities in web applications. Once it detects one or more SQL
+ injections on the target host, the user can choose among a variety of
+ options to perform an extensive back-end database management system
+ fingerprint, retrieve DBMS session user and database, enumerate users,
+ password hashes, privileges, databases, dump entire or user's specific
+ DBMS tables/columns, run his own SQL statement, read specific files on
+ the file system and more.
+
+Package: nmap
+Version: 7.91+dfsg1-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 4,559 kB
+Depends: nmap-common (= 7.91+dfsg1-1), libc6 (>= 2.29), libgcc-s1 (>= 3.0), liblinear4 (>= 2.01+dfsg), liblua5.3-0, libpcap0.8 (>= 1.5.1), libpcre3, libssh2-1 (>= 1.2.9), libssl1.1 (>= 1.1.0), libstdc++6 (>= 5.2), lua-lpeg (>= 1.0.2), zlib1g (>= 1:1.1.4)
+Suggests: ncat, ndiff, zenmap
+Homepage: https://nmap.org/
+Tag: admin::monitoring, implemented-in::c, interface::commandline,
+ network::scanner, role::program, scope::utility, use::scanning
+Download-Size: 1,901 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: The Network Mapper
+ Nmap is a utility for network exploration or security auditing. It
+ supports ping scanning (determine which hosts are up), many port
+ scanning techniques, version detection (determine service protocols
+ and application versions listening behind ports), and TCP/IP
+ fingerprinting (remote host OS or device identification). Nmap also
+ offers flexible target and port specification, decoy/stealth scanning,
+ sunRPC scanning, and more. Most Unix and Windows platforms are
+ supported in both GUI and commandline modes. Several popular handheld
+ devices are also supported, including the Sharp Zaurus and the iPAQ.
+
+Package: ncrack
+Version: 0.7+debian-2
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1,743 kB
+Depends: libc6 (>= 2.26), libgcc-s1 (>= 3.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 5.2)
+Homepage: https://nmap.org/ncrack/
+Download-Size: 698 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: High-speed network authentication cracking tool
+ Ncrack is a high-speed network authentication cracking tool.
+ It was built to help companies secure their networks by
+ proactively testing all their hosts and networking devices
+ for poor passwords. Security professionals also rely on
+ Ncrack when auditing their clients. Ncrack was designed
+ using a modular approach, a command-line syntax similar to
+ Nmap and a dynamic engine that can adapt its behaviour
+ based on network feedback. It allows for rapid, yet
+ reliable large-scale auditing of multiple hosts.
+ .
+ Ncrack's features include a very flexible interface granting
+ the user full control of network operations, allowing for
+ very sophisticated bruteforcing attacks, timing templates
+ for ease of use, runtime interaction similar to Nmap's and
+ many more. Protocols supported include RDP, SSH, http(s),
+ SMB, pop3(s), VNC, FTP, and telnet.
+ .
+ Be sure to read the Ncrack man page (https://nmap.org/ncrack/man.html)
+ to fully understand Ncrack usage.
+
+Package: ndiff
+Version: 7.91+dfsg1-1
+Priority: optional
+Section: net
+Source: nmap
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 391 kB
+Depends: python3-lxml, python3:any
+Recommends: nmap
+Breaks: nmap (<< 7.91+dfsg1-1), zenmap (<< 6.47-5~)
+Replaces: zenmap (<< 6.47-5~)
+Homepage: https://nmap.org/
+Download-Size: 306 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: The Network Mapper - result compare utility
+ Ndiff is a tool to aid in the comparison of Nmap scans. It takes two
+ Nmap XML output files and prints the differences between them them:
+ hosts coming up and down, ports becoming open or closed, and things like that.
+ It can produce output in human-readable text or machine-readable XML formats.
+
+Package: nmapsi4
+Version: 0.5~alpha2-2
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1,316 kB
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libqt5core5a (>= 5.12.2), libqt5dbus5 (>= 5.0.2), libqt5gui5 (>= 5.2.0) | libqt5gui5-gles (>= 5.2.0), libqt5network5 (>= 5.0.2), libqt5qml5 (>= 5.0.2), libqt5quick5 (>= 5.0.2) | libqt5quick5-gles (>= 5.0.2), libqt5webenginewidgets5 (>= 5.7.1), libqt5widgets5 (>= 5.1.0), libstdc++6 (>= 4.1.1), nmap, bind9-dnsutils
+Homepage: http://www.nmapsi4.org
+Tag: implemented-in::c++, interface::graphical, interface::x11,
+ network::scanner, role::program, scope::utility, uitoolkit::qt,
+ use::scanning, x11::application
+Download-Size: 448 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: graphical interface to nmap, the network scanner
+ NmapSI4 is a complete Qt-based Gui with the design goal to provide a complete
+ nmap interface for users, in order to manage all options of this power
+ security net scanner.
+
+Package: p0f
+Version: 3.09b-2+b1
+Priority: optional
+Section: net
+Source: p0f (3.09b-2)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 225 kB
+Depends: libc6 (>= 2.14), libpcap0.8 (>= 0.9.8)
+Homepage: http://lcamtuf.coredump.cx/p0f3/
+Tag: interface::commandline, network::scanner, role::program, scope::utility
+Download-Size: 81.6 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Passive OS fingerprinting tool
+ p0f performs passive OS detection based on SYN packets. Unlike nmap
+ and queso, p0f does recognition without sending any data.
+ Additionally, it is able to determine the distance to the remote
+ host, and can be used to determine the structure of a foreign or
+ local network. When running on the gateway of a network it is able
+ to gather huge amounts of data and provide useful statistics. On a
+ user-end computer it could be used as powerful IDS add-on. p0f
+ supports full tcpdump-style filtering expressions, and has an
+ extensible and detailed fingerprinting database.
+
+Package: pads
+Version: 1.2-12
+Priority: optional
+Section: net
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 325 kB
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.14), libpcap0.8 (>= 0.9.8), libpcre3, lsb-base (>= 3.0-6)
+Homepage: http://passive.sourceforge.net
+Tag: admin::monitoring, implemented-in::c, interface::commandline,
+ interface::daemon, network::scanner, role::program, scope::utility,
+ use::monitor
+Download-Size: 94.7 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Passive Asset Detection System
+ Pads is a signature based detection engine used to passively
+ detect network assets. It can determine which systems are
+ alive in the network as well as the services they make use
+ of. It is designed to complement IDS technology by providing
+ context to IDS alerts. Unlike other tools, like nmap, it will
+ not generate any network traffic which makes it useful to
+ run both on network capture files and promiscuous mode
+ interfaces.
+
+Package: pnscan
+Version: 1.14.1-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 67.6 kB
+Depends: libc6 (>= 2.7)
+Homepage: https://github.com/ptrrkssn/pnscan
+Tag: interface::commandline, network::scanner, role::program, scope::utility,
+ use::scanning
+Download-Size: 19.3 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Multi threaded port scanner
+ Pnscan is a multi threaded port scanner that can scan a large network
+ very quickly. If does not have all the features that nmap have but
+ is much faster.
+
+Package: psad
+Version: 2.4.3-1.2
+Priority: optional
+Section: admin
+Maintainer: Franck Joncourt <franck.joncourt@gmail.com>
+Installed-Size: 733 kB
+Depends: libc6 (>= 2.4), perl:any, libunix-syslog-perl, iptables, rsyslog | system-log-daemon, libnet-ip-perl, libdate-calc-perl, libcarp-clan-perl, whois, psmisc, libiptables-parse-perl, libiptables-chainmgr-perl, default-mta | mail-transport-agent, bsd-mailx | mailx | mailutils, lsb-base, net-tools, iproute2
+Suggests: fwsnort
+Homepage: http://www.cipherdyne.org/psad/
+Tag: admin::monitoring, implemented-in::perl, interface::daemon,
+ network::firewall, network::server, role::program, security::firewall,
+ security::ids, use::checking
+Download-Size: 177 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Port Scan Attack Detector
+ PSAD is a collection of four lightweight system daemons (in Perl and
+ C) designed to work with iptables to detect port scans. It features:
+  * a set of highly configurable danger thresholds (with sensible
+    defaults provided);
+  * verbose alert messages that include the source, destination,
+    scanned port range, beginning and end times, TCP flags, and
+    corresponding Nmap options;
+  * reverse DNS information;
+  * alerts via email;
+  * automatic blocking of offending IP addresses via dynamic firewall
+    configuration.
+ .
+ When combined with fwsnort and the iptables string match extension,
+ PSAD is capable of detecting many attacks described in the Snort rule
+ set that involve application layer data.
+
+Package: etherpuppet
+Version: 0.3-4
+Priority: optional
+Section: net
+Maintainer: Vincent Bernat <bernat@debian.org>
+Installed-Size: 32.8 kB
+Depends: libc6 (>= 2.15)
+Homepage: http://www.secdev.org/projects/etherpuppet/
+Download-Size: 10.9 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: create a virtual interface from a remote Ethernet interface
+ Etherpuppet is a small program that will create a virtual interface
+ (TUN/TAP) on one machine from the ethernet interface of another
+ machine through a TCP connection. Everything seen by the real
+ interface will be seen by the virtual one. Everything sent to the
+ virtual interface will be emitted by the real one.
+ .
+ It has been designed because one often has a small machine as their
+ Internet gateway, and sometimes want to run some big applications
+ that need raw access to this interface, for sniffing (Wireshark,
+ etc.)  or for crafting packets that do not survive being reassembled,
+ translated, routed, etc.
+
+Package: brutespray
+Version: 1.6.8-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 117 kB
+Depends: medusa, python3-argcomplete, python3:any
+Recommends: nmap
+Homepage: https://github.com/x90skysn3k/brutespray
+Download-Size: 12.4 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Python bruteforce tool
+ This Python script takes nmap GNMAP/XML output and automatically brute-forces
+ services with default credentials using Medusa.
+ BruteSpray can even find non-standard ports by using the -sV inside Nmap.
+
+Package: fierce
+Version: 1.4.0-2
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 244 kB
+Depends: python3-dnspython, python3:any
+Homepage: https://github.com/mschwager/fierce
+Download-Size: 75.7 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Domain DNS scanner
+ Fierce is a semi-lightweight scanner that helps locate non-contiguous
+ IP space and hostnames against specified domains. It's really meant as
+ a pre-cursor to nmap, unicornscan, nessus, nikto, etc, since all of
+ those require that you already know what IP space you are looking for.
+ This does not perform exploitation and does not scan the whole internet
+ indiscriminately. It is meant specifically to locate likely targets both
+ inside and outside a corporate network.
+ .
+ Because it uses DNS primarily you will often find mis-configured networks
+ that leak internal address space. That's especially useful in targeted malware.
+ Originally written by RSnake along with others at http://ha.ckers.org/.
+ This is simply a conversion to Python 3 to simplify and modernize the codebase.
+
+Package: atac
+Version: 0~20150903+r2013-8+b1
+Priority: optional
+Section: science
+Source: kmer (0~20150903+r2013-8)
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Installed-Size: 2,804 kB
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), python3 (<< 3.10), python3 (>= 3.9~), python3.9, python3:any, perl:any, libfile-which-perl, leaff, meryl, gnuplot
+Recommends: kmer-examples
+Homepage: http://kmer.sourceforge.net
+Download-Size: 376 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: genome assembly-to-assembly comparison
+ atac computes a one-to-one pairwise alignment of large DNA sequences. It first
+ finds the unique k-mers in each sequence, chains them to larger blocks, and
+ fills in spaces between blocks. It was written primarily to transfer
+ annotations between different assemblies of the human genome.
+ .
+ The output is a set of ungapped 'matches', and a set of gapped 'runs' formed
+ from the matches. Each match or run associates one sequence with the other
+ sequence. The association is 'unique', in that there is no other (sizeable)
+ associations for either sequence. Thus, large repeats and duplications are not
+ present in the output - they appear as unmapped regions.
+ .
+ Though the output is always pairwise, atac can cache intermediate results to
+ speed a comparisons of multiple sequences.
+ .
+ This package is part of the Kmer suite.
+
+Package: mapsembler2
+Version: 2.2.4+dfsg1-3
+Priority: optional
+Section: science
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Installed-Size: 1,313 kB
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 3.0), libgomp1 (>= 4.9), libstdc++6 (>= 5.2), zlib1g (>= 1:1.2.3.4), bc
+Homepage: http://colibread.inria.fr/mapsembler2/
+Download-Size: 724 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: bioinformatics targeted assembly software
+ Mapsembler2 is a targeted assembly software.
+ It takes as input a set of NGS raw reads (fasta or fastq, gzipped or not)
+ and a set of input sequences (starters).
+ .
+ It first determines if each starter is read-coherent, e.g. whether reads
+ confirm the presence of each starter in the original sequence.
+ Then for each read-coherent starter, Mapsembler2 outputs its sequence
+ neighborhood as a linear sequence or as a graph, depending on the user choice.
+ .
+ Mapsembler2 may be used for (not limited to):
+  - Validate an assembled sequence (input as starter), e.g. from a de
+    Bruijn graph assembly where read-coherence was not enforced.
+  - Checks if a gene (input as starter) has an homolog in a set of reads
+  - Checks if a known enzyme is present in a metagenomic NGS read set.
+  - Enrich unmappable reads by extending them, possibly making them mappable
+  - Checks what happens at the extremities of a contig
+  - Remove contaminants or symbiont reads from a read set
+
+Package: samblaster
+Version: 0.1.26-1
+Priority: optional
+Section: science
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Installed-Size: 66.6 kB
+Depends: libc6 (>= 2.14), libstdc++6 (>= 5)
+Homepage: https://github.com/GregoryFaust/samblaster
+Download-Size: 26.0 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: marks duplicates, extracts discordant/split reads
+ Current "next-generation" sequencing technologies cannot tell what
+ exact sequence they will be reading. They take what is available. And
+ if some sequences are read very often, then this needs some extra
+ biomedical thinking. The genome could for instance be duplicated.
+ .
+ samblaster is a fast and flexible program for marking duplicates in
+ read-id grouped paired-end SAM files. It can also optionally output
+ discordant read pairs and/or split read mappings to separate SAM files,
+ and/or unmapped/clipped reads to a separate FASTQ file. When marking
+ duplicates, samblaster will require approximately 20MB of memory per
+ 1M read pairs.
+
+Package: xprobe
+Version: 0.3-4
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 981 kB
+Provides: xprobe2
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:3.0), libpcap0.8 (>= 0.9.8), libstdc++6 (>= 5.2)
+Tag: admin::monitoring, implemented-in::c++, interface::commandline,
+ network::scanner, role::program, scope::utility, use::scanning
+Download-Size: 352 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Remote OS identification
+ Xprobe2 allows you to determine what operating system is running on a
+ remote host. It sends several packets to a host and analyses the
+ returned answers.
+ .
+ Xprobe2's functionality is comparable to the OS fingerprinting feature
+ in nmap (written by a different Fyodor):
+  - Outputs its level of confidence about the OS on the remote host.
+  - Remains usable even if intermediate systems (routers, firewalls) make
+    slight modifications to the packets.
+  - Can list the type of intermediate device (e.g. "Linux IP masquerading").
+  - Modular architecture allows new fingerprinting tests and new OS
+    signatures to be added.
+

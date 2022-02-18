@@ -1,0 +1,2678 @@
+Depends:\n
+Package: acct
+Version: 6.6.4-4
+Priority: optional
+Section: admin
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 352 kB
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.14), lsb-base
+Homepage: https://www.gnu.org/software/acct/
+Tag: admin::accounting, admin::user-management, interface::daemon,
+ role::program, suite::gnu, use::monitor, use::storing, use::viewing,
+ works-with::logfile, works-with::software:running
+Download-Size: 111 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: GNU Accounting utilities for process and login accounting
+ GNU Accounting Utilities is a set of utilities which reports and summarizes
+ data about user connect times and process execution statistics.
+ .
+ "Login accounting" provides summaries of system resource usage based on connect
+ time, and "process accounting" provides summaries based on the commands
+ executed on the system.
+ .
+ The 'last' command is provided by the util-linux package and not included here.
+
+Package: aesfix
+Version: 1.0.1-7
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 42.0 kB
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 4.9)
+Recommends: aeskeyfind
+Homepage: https://citp.princeton.edu/our-work/memory/code/
+Tag: implemented-in::c++, role::program
+Download-Size: 14.2 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: tool for correcting bit errors in an AES key schedule
+ This program illustrates a technique for correcting bit errors in an AES
+ key schedule. It should be used with the output of the aeskeyfind program.
+ .
+ It is limited to AES-128 key schedules, and it can only correct unidirectional
+ 1->0 bit errors.  For the most part it has been optimized for readability
+ rather than performance.
+ .
+ This package is useful to several activities, as forensics investigations.
+
+Package: aeskeyfind
+Version: 1:1.0-7
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 32.8 kB
+Depends: libc6 (>= 2.4)
+Homepage: https://citp.princeton.edu/our-work/memory/code/
+Tag: implemented-in::c, role::program
+Download-Size: 10.8 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: tool for locating AES keys in a captured memory image
+ This program illustrates automatic techniques for locating 128-bit and
+ 256-bit AES keys in a captured memory image.
+ .
+ The program uses various algorithms and also performs a simple entropy
+ test to filter out blocks that are not keys.  It counts the number of
+ repeated bytes and skips blocks that have too many repeats.
+ .
+ This method works even if several bits of the key schedule have been
+ corrupted due to memory decay.
+ .
+ This package is useful to several activities, as forensics investigations.
+
+Package: afflib-tools
+Version: 3.7.19-1
+Priority: optional
+Section: utils
+Source: afflib
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 615 kB
+Depends: libafflib0v5 (>= 3.7.16), libc6 (>= 2.14), libexpat1 (>= 2.0.1), libfuse2 (>= 2.6), libgcc-s1 (>= 3.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 5.2)
+Suggests: xmount
+Homepage: https://github.com/sshock/AFFLIBv3
+Tag: admin::forensics, interface::commandline, role::program,
+ security::forensics, uitoolkit::ncurses
+Download-Size: 182 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Advanced Forensics Format Library (utilities)
+ The Advanced Forensic Format (AFF) is on-disk format for storing
+ computer forensic information. Critical features of AFF include:
+ .
+  - AFF allows you to store both computer forensic data and associated
+    metadata in one or more files.
+  - AFF allows files to be digital signed, to provide for
+    chain-of-custody and long-term file integrity.
+  - AFF allows for forensic disk images to stored encrypted and
+    decrypted on-the-fly for processing. This allows disk images
+    containing privacy sensitive material to be stored on the Internet.
+ .
+ This package provides the AFF Toolkit, that is a set of programs for
+ working with computer forensic information. Using these tools you can:
+  * Interconvert disk images between a variety of formats, including:
+      - raw or "dd";
+      - splitraw (in which a single image is split between multiple files);
+      - AFF format (in which the entire disk image is stored in a single
+        file);
+      - AFD format (in which a disk image is stored in multiple AFF files
+        stored in a single directory);
+      - AFM format (in which an AFF file is used to annotate a raw file).
+  * Compare disk images and report the data or metadata that is different.
+  * Copy disk images from one location to another, with full verification
+    of data, metadata, and the automatic generation of a chain-of-custody
+    segment.
+  * Find errors in an AFF file and fix them.
+  * Print information about a file.
+  * Print detailed statistics about a file
+  * Generate a XML representation of a disk image's metadata (for example,
+    acquisition time or the serial number of the acquisition device).
+  * Produce a XML "diskprint" which allows a disk image to be rapidly
+    fingerprinted without having the computer the SHA1 of the entire
+    disk.
+ .
+ The AFF Toolkit provides these executables: affcat, affcompare, affconvert,
+ affcopy, affcrypto, affdiskprint, affinfo, affix, affrecover, affsegment,
+ affsign, affstats, affuse, affverify and affxml.
+
+Package: aircrack-ng
+Version: 1:1.6+git20201206.8259703-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 2,452 kB
+Depends: ethtool, hwloc, iw, rfkill, usbutils, wireless-tools, libc6 (>= 2.17), libgcc-s1 (>= 3.0), libgcrypt20 (>= 1.8.0), libhwloc15 (>= 2.4.0+dfsg), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libpcap0.8 (>= 0.9.8), libpcre3, libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 5), zlib1g (>= 1:1.1.4)
+Recommends: ieee-data
+Suggests: gpsd
+Homepage: https://www.aircrack-ng.org/
+Tag: implemented-in::c, interface::commandline, interface::text-mode,
+ network::scanner, role::program, scope::application, scope::utility,
+ security::authentication, security::cryptography, use::scanning
+Download-Size: 533 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: wireless WEP/WPA cracking utilities
+ aircrack-ng is an 802.11a/b/g WEP/WPA cracking program that can recover a
+ 40-bit, 104-bit, 256-bit or 512-bit WEP key once enough encrypted packets
+ have been gathered. Also it can attack WPA1/2 networks with some advanced
+ methods or simply by brute force.
+ .
+ It implements the standard FMS attack along with some optimizations,
+ thus making the attack much faster compared to other WEP cracking tools.
+ It can also fully use a multiprocessor system to its full power in order
+ to speed up the cracking process.
+ .
+ aircrack-ng is a fork of aircrack, as that project has been stopped by
+ the upstream maintainer.
+
+Package: arp-scan
+Version: 1.9.7-1
+Priority: optional
+Section: admin
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1,091 kB
+Depends: libc6 (>= 2.15), libpcap0.8 (>= 1.5.1), ieee-data
+Recommends: libwww-perl
+Homepage: https://github.com/royhills/arp-scan
+Tag: admin::monitoring, implemented-in::c, interface::commandline,
+ network::scanner, protocol::TODO, role::program, scope::utility
+Download-Size: 348 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: arp scanning and fingerprinting tool
+ arp-scan is a command-line tool that uses the ARP protocol to discover and
+ fingerprint IP hosts on the local network. It is available for Linux and BSD
+ under the GPL licence
+
+Package: binwalk
+Version: 2.2.0+dfsg1-1
+Priority: optional
+Section: devel
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 19.5 kB
+Depends: python3-binwalk, python3:any
+Homepage: https://github.com/ReFirmLabs/binwalk
+Download-Size: 8,124 B
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: tool library for analyzing binary blobs and executable code
+ Binwalk is a tool for searching a given binary image for embedded files
+ and executable code. Specifically, it is designed for identifying files
+ and code embedded inside of firmware images. Binwalk uses the libmagic
+ library, so it is compatible with magic signatures created for the Unix
+ file utility.
+ .
+ Binwalk also includes a custom magic signature file which contains
+ improved signatures for files that are commonly found in firmware images
+ such as compressed/archived files, firmware headers, Linux kernels,
+ bootloaders, filesystems, etc.
+ .
+ This package is an empty package, because the binary tool is already
+ provided with the library, dependency of this package.
+
+Package: braa
+Version: 0.82-5
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 64.5 kB
+Depends: libc6 (>= 2.15)
+Homepage: http://s-tech.elsat.net.pl/
+Download-Size: 22.9 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Mass SNMP scanner
+ Braa is a mass snmp scanner. The intended usage of such a tool is of course
+ making SNMP queries - but unlike snmpget or snmpwalk from net-snmp, it is able
+ to query dozens or hundreds of hosts simultaneously, and in a single process.
+ Thus, it consumes very few system resources and does the scanning VERY fast.
+ .
+ Braa implements its OWN snmp stack, so it does NOT need any SNMP libraries
+ like net-snmp. The implementation is very dirty, supports only several data
+ types, and in any case cannot be stated 'standard-conforming'! It was designed
+ to be fast, and it is fast. For this reason (well, and also because of author
+ laziness ;), there is no ASN.1 parser in braa - the user HAVE to know the
+ numerical values of OID's
+ (for instance .1.3.6.1.2.1.1.5.0 instead of system.sysName.0).
+
+Package: bruteforce-salted-openssl
+Version: 1.4.2-3
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 55.3 kB
+Depends: libc6 (>= 2.29), libssl1.1 (>= 1.1.0)
+Homepage: https://github.com/glv2/bruteforce-salted-openssl
+Download-Size: 20.3 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: try to find the passphrase for files encrypted with OpenSSL
+ bruteforce-salted-openssl try to find the passphrase or password of a file
+ that was encrypted with the openssl command. It can be used in two ways:
+ .
+    - Try all possible passwords given a charset.
+    - Try all passwords in a file (dictionary).
+ .
+ bruteforce-salted-openssl have the following features:
+ .
+    - You can specify the number of threads to use when cracking a file.
+    - The program should be able to use all the digests and symmetric ciphers
+      available with the OpenSSL libraries installed on your system.
+    - Sending a USR1 signal to a running bruteforce-salted-openssl process
+      makes it print progress and continue.
+    - There are an exhaustive mode and a dictionary mode.
+ .
+ In the exhaustive mode the program tries to decrypt the file by trying all
+ possible passwords. It is especially useful if you know something about the
+ password (i.e. you forgot a part of your password but still remember most of
+ it). Finding the password of the file without knowing anything about it would
+ take way too much time (unless the password is really short and/or weak).
+ There are some command line options to specify:
+ .
+    - The minimum password length to try.
+    - The maximum password length to try.
+    - The beginning of the password.
+    - The end of the password.
+    - The character set to use (among the characters of the current locale).
+ .
+ In dictionary mode the program tries to decrypt the file by trying all the
+ passwords contained in a file. The file must have one password per line.
+ .
+ This package is useful for security, pentests and forensics investigations.
+
+Package: bruteforce-wallet
+Version: 1.5.3-4
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 53.2 kB
+Depends: libc6 (>= 2.29), libdb5.3, libssl1.1 (>= 1.1.0)
+Homepage: https://github.com/glv2/bruteforce-wallet
+Download-Size: 16.0 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: try to find the password of an encrypted wallet file
+ bruteforce-wallet try to find the password of an encrypted
+ Peercoin (or Bitcoin, Litecoin, etc...) wallet file.
+ It can be used in two ways:
+ .
+    - Try all possible passwords given a charset.
+    - Try all passwords in a file (dictionary).
+ .
+ bruteforce-wallet have the following features:
+ .
+    - You can specify the number of threads to use when cracking a file.
+    - Sending a USR1 signal to a running bruteforce-wallet process
+      makes it print progress and continue.
+    - There are an exhaustive mode and a dictionary mode.
+ .
+ In the exhaustive mode the program tries to decrypt one of the encrypted
+ addresses in the wallet by trying all the possible passwords.
+ It is especially useful if you know something about the password
+ (i.e. you forgot a part of your password but still remember most of it).
+ Finding the password of a wallet without knowing anything about it would
+ take way too much time (unless the password is really short and/or weak).
+ There are some command line options to specify:
+ .
+    - The minimum password length to try.
+    - The maximum password length to try.
+    - The beginning of the password.
+    - The end of the password.
+    - The character set to use (among the characters of the current locale).
+ .
+ In dictionary mode the program tries to decrypt one of the encrypted
+ addresses in the wallet by trying all the passwords contained in a file.
+ The file must have one password per line.
+ .
+ This package is useful for finding the password for a Peercoin encrypted
+ wallet file (or Bitcoin, Litecoin, etc ...) (i.e. wallet.dat).
+
+Package: brutespray
+Version: 1.6.8-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 117 kB
+Depends: medusa, python3-argcomplete, python3:any
+Recommends: nmap
+Homepage: https://github.com/x90skysn3k/brutespray
+Download-Size: 12.4 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Python bruteforce tool
+ This Python script takes nmap GNMAP/XML output and automatically brute-forces
+ services with default credentials using Medusa.
+ BruteSpray can even find non-standard ports by using the -sV inside Nmap.
+
+Package: btscanner
+Version: 2.1-9
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 109 kB
+Depends: libbluetooth3 (>= 4.91), libc6 (>= 2.4), libncurses6 (>= 6), libtinfo6 (>= 6), libxml2 (>= 2.7.4), ieee-data, perl:any
+Homepage: https://salsa.debian.org/pkg-security-team/btscanner
+Tag: hardware::TODO, implemented-in::c, interface::text-mode,
+ network::scanner, role::program, scope::utility, uitoolkit::ncurses,
+ use::scanning
+Download-Size: 33.6 kB
+APT-Manual-Installed: yes
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: ncurses-based scanner for Bluetooth devices
+ btscanner is a tool designed specifically to extract as much information
+ as possible from a Bluetooth device without the requirement to pair. A
+ detailed information screen extracts HCI and SDP information, and
+ maintains an open connection to monitor the RSSI and link quality.
+ btscanner is based on the BlueZ Bluetooth stack, which is included with
+ recent Linux kernels, and the BlueZ toolset. btscanner also contains a
+ complete listing of the IEEE OUI numbers and class lookup tables. Using
+ the information gathered from these sources it is possible to make
+ educated guesses as to the host device type.
+
+Package: bully
+Version: 1.4.00-1+b1
+Priority: optional
+Section: net
+Source: bully (1.4.00-1)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 178 kB
+Depends: libc6 (>= 2.14), liblua5.3-0, libpcap0.8 (>= 0.9.8), pixiewps, aircrack-ng
+Homepage: https://github.com/kimocoder/bully
+Download-Size: 71.9 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Implementation of the WPS brute force attack, written in C
+ Bully is a new implementation of the WPS brute force attack, written in C. It
+ is conceptually identical to other programs, in that it exploits the (now well
+ known) design flaw in the WPS specification. It has several advantages over
+ the original reaver code. These include fewer dependencies, improved memory
+ and cpu performance, correct handling of endianness, and a more robust set of
+ options.
+
+Package: capstone-tool
+Version: 4.0.1+really+3.0.5-2+b1
+Priority: optional
+Section: libs
+Source: capstone (4.0.1+really+3.0.5-2)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 54.3 kB
+Depends: libc6 (>= 2.4), libcapstone3 (>= 3.0.0)
+Homepage: https://www.capstone-engine.org/
+Tag: role::shared-lib
+Download-Size: 20.6 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: lightweight multi-architecture disassembly framework - command line tool
+ Capstone is a lightweight multi-platform, multi-architecture disassembly
+ framework.
+ .
+ This package contains cstool, a command-line tool to disassemble
+ hexadecimal strings.
+
+Package: ccrypt
+Version: 1.11-2
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 185 kB
+Depends: libc6 (>= 2.14), libcrypt1 (>= 1:4.1.0)
+Suggests: elpa-ps-ccrypt (>= 1.10-5)
+Homepage: http://ccrypt.sourceforge.net/
+Tag: interface::commandline, role::program, scope::utility,
+ security::cryptography
+Download-Size: 64.4 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: secure encryption and decryption of files and streams
+ ccrypt is a utility for encrypting and decrypting files and streams. It was
+ designed as a replacement for the standard unix crypt utility, which is
+ notorious for using a very weak encryption algorithm. ccrypt is based on the
+ Rijndael cipher, which is the U.S. government's chosen candidate for the
+ Advanced Encryption Standard (AES, see http://www.nist.gov/aes). This cipher is
+ believed to provide very strong security.
+
+Package: cewl
+Version: 5.4.9-2
+Priority: optional
+Section: web
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 77.8 kB
+Depends: ruby | ruby-interpreter, ruby-mime, ruby-mime-types, ruby-mini-exiftool, ruby-net-http-digest-auth, ruby-nokogiri, ruby-spider, ruby-zip
+Suggests: john
+Homepage: https://github.com/digininja/CeWL
+Download-Size: 26.3 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: custom word list generator
+ CeWL (Custom Word List generator) is a ruby app which spiders
+ a given URL, up to a specified depth, and returns a list of
+ words which can then be used for password crackers such as John
+ the Ripper. Optionally, CeWL can follow  external links.
+ .
+ CeWL can also create a list of email addresses found in mailto
+ links. These email addresses can be used as usernames in brute
+ force actions.
+ .
+ Another tool provided by CeWL project is FAB (Files Already
+ Bagged). FAB extracts the content of the author/creator fields,
+ from metadata of the some files, to create lists of possible
+ usernames. These usernames can be used in association with the
+ password list generated by CeWL. FAB uses the same metadata
+ extraction techniques that CeWL. Currently, FAB process Office
+ pre 2007, Office 2007 and PDF formats.
+ .
+ CeWL is useful in security tests and forensics investigations.
+ CeWL is pronounced "cool".
+
+Package: chaosreader
+Version: 0.96-8
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 236 kB
+Depends: perl:any, libnet-dns-perl
+Suggests: tcpdump, wireshark
+Homepage: http://www.brendangregg.com/chaosreader.html
+Tag: admin::monitoring, implemented-in::perl, interface::commandline,
+ role::program, scope::utility, use::converting, use::monitor,
+ works-with::logfile, works-with::network-traffic
+Download-Size: 57.2 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: trace network sessions and export it to html format
+ Chaosreader traces TCP/UDP/others sessions and fetches application data from
+ snoop or tcpdump logs (or other libpcap compatible programs). This is a type
+ of "any-snarf" program, as it will fetch telnet sessions, FTP files, HTTP
+ transfers (HTML, GIF, JPEG etc) and SMTP emails from the captured data inside
+ network traffic logs. A html index file is created to that links to all the
+ session details, including realtime replay programs for telnet, rlogin, IRC,
+ X11 and VNC sessions. Chaosreader reports such as image reports and HTTP
+ GET/POST content reports.
+ .
+ It also creates replay programs for telnet sessions, so that you can play
+ them back in realtime (or even different speeds).
+ .
+ Chaosreader can also run in standalone mode, where it invokes tcpdump or
+ snoop (a similar to tcpdump program for Solaris) to create the log files
+ and then processes them.
+ .
+ This package is useful for forensics investigations and for network traffic
+ analysis.
+
+Package: chkrootkit
+Version: 0.53-2
+Built-Using: glibc (= 2.31-3)
+Priority: optional
+Section: misc
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 992 kB
+Depends: libc6 (>= 2.7), debconf (>= 0.5) | debconf-2.0, binutils, net-tools, debconf, procps, openssh-client
+Homepage: http://www.chkrootkit.org/
+Tag: implemented-in::c, interface::commandline, role::program,
+ scope::utility, security::ids
+Download-Size: 300 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: rootkit detector
+ The chkrootkit security scanner searches the local system for signs
+ that it is infected with a 'rootkit'. Rootkits are set of programs
+ and hacks designed to take control of a target machine by using known
+ security flaws.
+ .
+ Types that chkrootkit can identify are listed on the project's home page.
+ .
+ Please note that where chkrootkit detects no intrusions, this does
+ not guarantee that the system is uncompromised. In addition to
+ running chkrootkit, more specific tests should always be performed.
+
+Package: cowpatty
+Version: 4.8-3
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 77.8 kB
+Depends: libc6 (>= 2.14), libpcap0.8 (>= 0.9.8), libssl1.1 (>= 1.1.0)
+Homepage: https://www.willhackforsushi.com/?page_id=50
+Download-Size: 24.0 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Brute-force WPA dictionary attack
+ If you are auditing WPA-PSK or WPA2-PSK networks, you can use
+ this tool to identify weak passphrases that were used to generate the
+ PMK.  Supply a libpcap capture file that includes the 4-way handshake, a
+ dictionary file of passphrases to guess with, and the SSID for the
+ network.
+
+Package: crack
+Version: 5.0a-12+b1
+Priority: optional
+Section: admin
+Source: crack (5.0a-12)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 153 kB
+Depends: crack-common, libc6 (>= 2.14), libcrypt1 (>= 1:4.1.0)
+Conflicts: crack-md5
+Homepage: http://www.crypticide.com/alecm/software/crack/
+Tag: interface::commandline, role::program, scope::utility,
+ security::authentication, use::checking, works-with::dictionary
+Download-Size: 29.9 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Password guessing program (crypt() variant)
+ Crack is program designed to quickly locate vulnerabilities
+ in Unix (or other) password files by scanning the contents
+ of a password file, looking for users who have misguidedly
+ chosen a weak login password.
+ .
+ This package provides the runtime files for the crypt() version.
+
+Package: crack-md5
+Version: 5.0a-12+b1
+Priority: optional
+Section: admin
+Source: crack (5.0a-12)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 152 kB
+Provides: crack
+Depends: crack-common, libc6 (>= 2.14), libcrypt1 (>= 1:4.1.0)
+Conflicts: crack
+Homepage: http://www.crypticide.com/alecm/software/crack/
+Tag: interface::commandline, role::program, scope::utility,
+ security::authentication, use::checking, works-with::dictionary
+Download-Size: 29.9 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Password guessing program (MD5 variant)
+ Crack is program designed to quickly locate vulnerabilities
+ in Unix (or other) password files by scanning the contents
+ of a password file, looking for users who have misguidedly
+ chosen a weak login password.
+ .
+ This package provides the runtime files for the MD5 version.
+
+Package: dc3dd
+Version: 7.2.646-4
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 486 kB
+Depends: libc6 (>= 2.17)
+Homepage: http://dc3dd.sf.net
+Tag: admin::forensics, admin::recovery, interface::commandline,
+ role::program, security::forensics
+Download-Size: 120 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: patched version of GNU dd with forensic features
+ dc3dd is a patched version of GNU dd with added features for computer
+ forensics:
+ .
+  * on the fly hashing (md5, sha-1, sha-256, and sha-512);
+  * possibility to write errors to a file;
+  * group errors in the error log;
+  * pattern wiping;
+  * progress report;
+  * possibility to split output.
+
+Package: dirb
+Version: 2.22+dfsg-5
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1,507 kB
+Depends: libc6 (>= 2.8), libcurl4 (>= 7.16.2)
+Homepage: http://dirb.sourceforge.net/
+Download-Size: 208 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: URL bruteforcing tool
+ DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web
+ Objects. It basically works by launching a dictionary based attack against
+ a web server and analyzing the responses.
+ .
+ DIRB comes with a set of preconfigured attack wordlists for easy usage but
+ you can use your custom wordlists. Also DIRB sometimes can be used as a
+ classic CGI scanner, but remember that it is a content scanner not a
+ vulnerability scanner.
+ .
+ DIRB's main purpose is to help in professional web application auditing.
+ Specially in security related testing. It covers some holes not covered by
+ classic web vulnerability scanners. DIRB looks for specific web objects that
+ other generic CGI scanners can't look for. It doesn't search vulnerabilities
+ nor does it look for web contents that can be vulnerable.
+
+Package: dislocker
+Version: 0.7.1-5
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 95.2 kB
+Depends: libc6 (>= 2.14), libdislocker0.7 (>= 0.7.1), libfuse2 (>= 2.6), ruby
+Homepage: https://github.com/Aorimn/dislocker
+Download-Size: 23.3 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: read/write encrypted BitLocker volumes
+ Dislocker has been designed to read BitLocker encrypted partitions under
+ a Linux system. The driver used to read volumes encrypted in Windows system
+ versions of the Vista to 10 and BitLocker-To-Go encrypted partitions,that's
+ USB/FAT32 partitions.
+ .
+ The software works with driver composed of a library, with multiple binaries
+ using this library. Decrypting the partition, you have to give it a mount
+ point where, once keys are decrypted, a file named dislocker-file appears.
+ This file is a virtual NTFS partition, so you can mount it as any NTFS
+ partition and then read from or write to it. Writing to the NTFS virtual
+ file will change the underlying BitLocker partition content.
+ .
+ This tool is useful in cryptography managing and forensics investigations.
+
+Package: dnsrecon
+Version: 0.9.1+git20200921-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1,467 kB
+Depends: python3:any, python3-dnspython, python3-netaddr, python3-lxml
+Homepage: https://github.com/darkoperator/dnsrecon
+Download-Size: 471 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Powerful DNS enumeration script
+ DNSRecon is a Python script that provides the ability to perform:
+ .
+  * Check all NS Records for Zone Transfers.
+  * Enumerate General DNS Records for a given Domain
+    (MX, SOA, NS, A, AAAA, SPF and TXT).
+  * Perform common SRV Record Enumeration.
+  * Top Level Domain (TLD) Expansion.
+  * Check for Wildcard Resolution.
+  * Brute Force subdomain and host A and AAAA records
+    given a domain and a wordlist.
+  * Perform a PTR Record lookup for a given IP Range or CIDR.
+  * Check a DNS Server Cached records for A, AAAA and CNAME
+  * Records provided a list of host records in a text file to check.
+  * Enumerate Hosts and Subdomains using Google
+
+Package: doona
+Version: 1.0+git20190108-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 133 kB
+Depends: perl
+Homepage: https://github.com/wireghoul/doona
+Download-Size: 20.8 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Network fuzzer forked from bed
+ Doona is a fork of the Bruteforce Exploit Detector Tool (BED).
+ BED is a program which is designed to check daemons for
+ potential buffer overflows, format string bugs etc.
+
+Package: dsniff
+Version: 2.4b1+debian-29
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 425 kB
+Depends: libc6 (>= 2.15), libdb5.3, libnet1 (>= 1.1.2.1), libnids1.21 (>= 1.23), libpcap0.8 (>= 0.9.8), libssl1.1 (>= 1.1.0), libx11-6, libxmu6, openssl
+Homepage: http://www.monkey.org/~dugsong/dsniff/
+Tag: implemented-in::c, interface::commandline, protocol::ethernet,
+ protocol::http, protocol::ip, protocol::smtp, protocol::ssh,
+ role::program, scope::utility, use::monitor, works-with::mail
+Download-Size: 103 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Various tools to sniff network traffic for cleartext insecurities
+ This package contains several tools to listen to and create network traffic:
+ .
+  * arpspoof  - Send out unrequested (and possibly forged) arp replies.
+  * dnsspoof  - forge replies to arbitrary DNS address / pointer queries
+              on the Local Area Network.
+  * dsniff    - password sniffer for several protocols.
+  * filesnarf - saves selected files sniffed from NFS traffic.
+  * macof     - flood the local network with random MAC addresses.
+  * mailsnarf - sniffs mail on the LAN and stores it in mbox format.
+  * msgsnarf  - record selected messages from different Instant Messengers.
+  * sshmitm   - SSH monkey-in-the-middle. proxies and sniffs SSH traffic.
+  * sshow     - SSH traffic analyser.
+  * tcpkill   - kills specified in-progress TCP connections.
+  * tcpnice   - slow down specified TCP connections via "active"
+              traffic shaping.
+  * urlsnarf  - output selected URLs sniffed from HTTP traffic in CLF.
+  * webmitm   - HTTP / HTTPS monkey-in-the-middle. transparently proxies.
+  * webspy    - sends URLs sniffed from a client to your local browser
+              (requires libx11-6 installed).
+ .
+ Please do not abuse this software.
+
+Package: ed2k-hash
+Version: 0.4.0+ds-3
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 53.2 kB
+Depends: libc6 (>= 2.4)
+Homepage: http://ed2k-tools.sourceforge.net/ed2k_hash.shtml
+Download-Size: 17.0 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: tool for generating ed2k-links
+ This tool is useful for people who want to know the ed2k-links of files they
+ are not currently sharing, or who want the ed2k-links for all files in certain
+ directories etc. You can hash single files, multiple files, whole directories,
+ or whole directory trees.
+ .
+ ed2k-hash can be used for several activities, as forensics investigations.
+
+Package: exifprobe
+Version: 2.0.1+git20170416.3c2b769-4
+Priority: optional
+Section: graphics
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 511 kB
+Depends: libc6 (>= 2.29)
+Homepage: https://github.com/hfiguiere/exifprobe
+Tag: implemented-in::c, interface::commandline, role::program,
+ works-with-format::TODO, works-with-format::jpg,
+ works-with-format::tiff, works-with::image, works-with::image:raster
+Download-Size: 175 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: read metadata from digital pictures
+ Exifprobe reads image files produced by digital cameras (including
+ several so-called "raw" file formats) and reports the structure of
+ the files and the auxiliary data and metadata contained within them.
+ .
+ In addition to TIFF, JPEG and EXIF, the program understands several
+ formats which may contain "raw" camera data, including MRW, CIFF/CRW,
+ JP2/JPEG2000, RAF, and X3F, as well as most TIFF-derived "raw" formats,
+ including DNG, ORF, CR2, NEF, K25/KDC/DCR and PEF.
+ .
+ This program is useful in forensics investigations.
+
+Package: ext4magic
+Version: 0.3.2-13
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 239 kB
+Depends: libblkid1 (>= 2.16), libbz2-1.0, libc6 (>= 2.14), libext2fs2 (>= 1.42), libmagic1 (>= 5.12), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Homepage: http://ext4magic.sf.net/ext4magic_en.html
+Download-Size: 109 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: recover deleted files from ext3 or ext4 partitions
+ ext4magic is a file carver (or file carving). It can be used when recovering
+ from disasters or in digital forensics activities.
+ .
+ The deletion of files in ext3/4 filesystems can not be easily reversed. Zero
+ out of the block references in the inodes makes that impossible. Experiences
+ with other programs have proved that is possible restore sufficient information
+ for a recover of many data files, directly from the filesystem journal.
+ .
+ ext4magic can extract the information from the journal and restore files in an
+ entire directory tree, if the information in the journal are sufficient.
+ .
+ This tool can recover the most file types, with original filename, owner and
+ group, file mode bits and also the old atime/mtime stamps.
+
+Package: extundelete
+Version: 0.2.4-2
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 152 kB
+Depends: libc6 (>= 2.14), libcom-err2 (>= 1.43.9), libext2fs2 (>= 1.42), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Homepage: http://extundelete.sourceforge.net/
+Tag: admin::filesystem, admin::recovery, implemented-in::c, role::program,
+ scope::utility, works-with::file
+Download-Size: 53.1 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: utility to recover deleted files from ext3/ext4 partition
+ extundelete uses the information stored in the partition's journal to attempt
+ to recover a file that has been deleted. There is no guarantee that any
+ particular file will be able to be undeleted.
+
+Package: ewf-tools
+Version: 20140807-2+b2
+Priority: optional
+Section: admin
+Source: libewf (20140807-2)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 6,319 kB
+Depends: libc6 (>= 2.17), libewf2 (= 20140807-2+b2), libfuse2 (>= 2.6), libssl1.1 (>= 1.1.0)
+Conflicts: libewf1 (<< 20090606+debian-1)
+Replaces: libewf1 (<< 20090606+debian-1)
+Homepage: https://github.com/libyal/libewf-legacy
+Tag: admin::filesystem, admin::forensics, implemented-in::c,
+ interface::commandline, role::program, security::forensics
+Download-Size: 691 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: collection of tools for reading and writing EWF files
+ Libewf is a library with support for reading and writing the Expert Witness
+ Compression Format (EWF).
+ This library allows you to read media information of EWF files in the SMART
+ (EWF-S01) format and the EnCase (EWF-E01) format. It supports files created
+ by EnCase 1 to 6, linen and FTK Imager. The libewf is useful for forensics
+ investigations.
+ .
+ This package contains tools to acquire, verify and export EWF files.
+
+Package: fcrackzip
+Version: 1.0-10
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 81.9 kB
+Depends: libc6 (>= 2.7)
+Suggests: unzip, wordlist
+Homepage: http://oldhome.schmorp.de/marc/fcrackzip.html
+Tag: interface::commandline, role::program, scope::utility,
+ security::cryptography, use::converting, works-with-format::zip,
+ works-with::archive
+Download-Size: 28.8 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: password cracker for zip archives
+ fcrackzip is a fast password cracker partly written in assembler. It is
+ able to crack password protected zip files with brute force or dictionary
+ based attacks, optionally testing with unzip its results. It can also crack
+ cpmask'ed images.
+ .
+ This package is useful for pentesters, ethical hackers and forensics
+ experts.
+
+Package: forensic-artifacts
+Version: 20190320-3
+Priority: optional
+Section: misc
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 253 kB
+Homepage: https://github.com/ForensicArtifacts/artifacts
+Download-Size: 32.9 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: knowledge base of forensic artifacts (data files)
+ A free, community-sourced, machine-readable knowledge base of forensic
+ artifacts that the world can use both as an information source and within
+ other tools.
+ .
+ This package installs the data files alone, without the Python toolkit.
+
+Package: forensics-colorize
+Version: 1.1-5
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 2,151 kB
+Depends: libc6 (>= 2.4)
+Suggests: sxiv
+Homepage: https://github.com/jessek/colorize
+Download-Size: 12.9 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: show differences between files using color graphics
+ forensics-colorize is a set of tools to visually compare large files, as
+ filesystem images, creating graphics of them. It is intuitive because the
+ produced graphics provide a quick and perfect sense about the percentage
+ of changes between two files.
+ .
+ Comparing large textual files using a simple diff can produce a very big
+ result in lines, causing confusion. On the other hand, diff is improper
+ to compare binary files.
+ .
+ This package provides two command line programs: filecompare and colorize.
+ The filecompare command is used to create a special and auxiliary input
+ file for colorize. The colorize command will generate an intuitive graphic
+ that will make easier to perceive the level of changes between the files.
+
+Package: galleta
+Version: 1.0+20040505-11
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 34.8 kB
+Depends: libc6 (>= 2.4)
+Homepage: http://odessa.sourceforge.net/
+Tag: admin::forensics, implemented-in::c, interface::commandline,
+ role::program, security::forensics, use::converting, works-with::text
+Download-Size: 9,372 B
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Internet Explorer cookie forensic analysis tool
+ Galleta is a forensics tool that examines the content of cookie files
+ produced by Microsoft Internet Explorer (MSIE). It parses the file and
+ outputs a field separated that can be loaded in a spreadsheet.
+
+Package: grokevt
+Version: 0.5.0-4
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 124 kB
+Depends: reglookup, python3-pyregfi, python3:any
+Homepage: http://projects.sentinelchicken.org/grokevt/
+Tag: admin::logging, interface::commandline, role::program,
+ security::forensics, security::log-analyzer, use::converting,
+ works-with::logfile
+Download-Size: 35.2 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: scripts for reading Microsoft Windows event log files
+ GrokEVT is a collection of scripts built for reading Microsoft Windows
+ NT/2000/XP/2003 event log files.
+ .
+ Currently the scripts work together on one or more mounted Microsoft Windows
+ partitions to extract all information needed (registry entries, message
+ templates, and log files) to convert the logs to a human-readable format.
+ .
+ This program is useful in forensics investigations.
+
+Package: hashdeep
+Version: 4.4-6
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1,499 kB
+Provides: md5deep
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Homepage: http://md5deep.sf.net
+Download-Size: 138 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: recursively compute hashsums or piecewise hashings
+ hashdeep is a set of tools to compute MD5, SHA1, SHA256, tiger
+ and whirlpool hashsums of arbitrary number of files recursively.
+ .
+ The main hashdeep features are:
+ .
+   * It can compare those hashsums with a list of known hashes;
+   * The tools can display those that match the list or those that
+     does not match;
+   * It can  display a time estimation when processing large files.
+   * It can do piecewise hashing (hash input files in arbitrary
+     sized blocks).
+ .
+ This package is useful in forensics investigations.
+
+Package: hashid
+Version: 3.1.4-3
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 86.0 kB
+Depends: python3:any
+Homepage: https://psypanda.github.io/hashID/
+Download-Size: 15.5 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Identify the different types of hashes used to encrypt data
+ Identify the different types of hashes used to encrypt data and especially
+ passwords.
+ .
+ hashID is a tool written in Python 3.x which supports the identification of
+ over 175 unique hash types using regular expressions.
+ It is able to identify a single hash or parse a file and identify the hashes
+ within it.
+ There is also a nodejs version of hashID available which is easily set up to
+ provide online hash identification.
+
+Package: hashrat
+Version: 1.13-1
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 354 kB
+Depends: libc6 (>= 2.27)
+Homepage: http://www.cjpaget.co.uk/Code/Hashrat
+Download-Size: 148 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: hashing tool supporting several hashes and recursivity
+ Hashrat is a hash-generation utility that supports the md5, sha1, sha256,
+ sha512, whirlpool, jh-244, jh256, jh-384 and jh-512 hash functions, and
+ also the HMAC versions of those functions. It can output in 'traditional'
+ format (same as md5sum and shasum and the like), or it's own format.
+ .
+ Hashes can be output in octal, decimal, hexadecimal, uppercase hexadecimal
+ or base64.
+ .
+ Hashrat also supports directory recursion, hashing entire devices,
+ generating a hash for an entire directory, operations in remote machines
+ and several other features. It has a 'CGI' mode that can be used as a
+ web-page to lookup hashes.
+ .
+ This tool is useful in forensics investigations and network security.
+
+Package: hydra
+Version: 9.1-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 982 kB
+Depends: libapr1 (>= 1.2.7), libbson-1.0-0 (>= 1.17.0), libc6 (>= 2.29), libfbclient2 (>= 2.5.0.25784~ReleaseCandidate1.ds2), libfreerdp2-2 (>= 2.0.0~git20160317.1.75ae3f5+dfsg1), libgcrypt20 (>= 1.8.0), libidn11 (>= 1.13), libmariadb3 (>= 3.0.0), libmemcached11, libmongoc-1.0-0 (>= 1.17.0), libpcre3, libpq5, libssh-4 (>= 0.8.0), libssl1.1 (>= 1.1.0), libsvn1 (>= 1.10), libtinfo6 (>= 6), libwinpr2-2 (>= 2.0.0~git20160317.1.75ae3f5+dfsg1), zlib1g (>= 1:1.1.4)
+Recommends: wget | curl
+Suggests: hydra-gtk
+Homepage: https://github.com/vanhauser-thc/thc-hydra
+Tag: role::program, uitoolkit::ncurses
+Download-Size: 276 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: very fast network logon cracker
+ Hydra is a parallelized login cracker which supports numerous protocols
+ to attack. It is very fast and flexible, and new modules are easy to add.
+ .
+ This tool makes it possible for researchers and security consultants to
+ show how easy it would be to gain unauthorized access to a system
+ remotely.
+ .
+ It supports: Cisco AAA, Cisco auth, Cisco enable, CVS, FTP, HTTP(S)-FORM-GET,
+ HTTP(S)-FORM-POST, HTTP(S)-GET, HTTP(S)-HEAD, HTTP-Proxy, ICQ, IMAP, IRC,
+ LDAP, MS-SQL, MySQL, NNTP, Oracle Listener, Oracle SID, PC-Anywhere, PC-NFS,
+ POP3, PostgreSQL, RDP, Rexec, Rlogin, Rsh, SIP, SMB(NT), SMTP, SMTP Enum,
+ SNMP v1+v2+v3, SOCKS5, SSH (v1 and v2), SSHKEY, Subversion, Teamspeak (TS2),
+ Telnet, VMware-Auth, VNC and XMPP.
+
+Package: mac-robber
+Version: 1.02-12
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 34.8 kB
+Depends: libc6 (>= 2.4)
+Suggests: sleuthkit
+Enhances: sleuthkit
+Homepage: https://www.sleuthkit.org/mac-robber
+Download-Size: 10.3 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: collects data about allocated files in mounted filesystems
+ mac-robber is a digital investigation tool (digital forensics) that collects
+ metadata from allocated files in a mounted filesystem. This is useful during
+ incident response when analyzing a live system or when analyzing a dead
+ system in a lab. The data can be used by the mactime tool in The Sleuth Kit
+ (TSK or SleuthKit only) to make a timeline of file activity. The mac-robber
+ tool is based on the grave-robber tool from TCT (The Coroners Toolkit).
+ .
+ mac-robber requires that the filesystem be mounted by the operating system,
+ unlike the tools in The Sleuth Kit that process the filesystem themselves.
+ Therefore, mac-robber will not collect data from deleted files or files that
+ have been hidden by rootkits. mac-robber will also modify the Access times
+ on directories that are mounted with write permissions.
+ .
+ mac-robber is useful when dealing with a filesystem that is not supported
+ by The Sleuth Kit or other filesystem analysis tools. You can run mac-robber
+ on an obscure, suspect UNIX filesystem that has been mounted read-only on a
+ trusted system.
+
+Package: magicrescue
+Version: 1.1.10-4
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 265 kB
+Depends: dcraw, flac, libjpeg-turbo-progs, mpg123, sqlite3, unzip, zip, libc6 (>= 2.14), libgdbm-compat4 (>= 1.16)
+Homepage: https://github.com/jbj/magicrescue
+Tag: admin::filesystem, admin::recovery, implemented-in::c,
+ interface::commandline, role::program, scope::utility, use::scanning,
+ works-with::file
+Download-Size: 82.4 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: recover files by looking for magic bytes
+ Magic Rescue scans a block device for file types it knows how to recover
+ and calls an external program to extract them. It looks at "magic bytes"
+ (file patterns) in file contents, so it can be used both as an undelete
+ utility and for recovering a corrupted drive or partition. As long as
+ the file data is there, it will find it.
+ .
+ Magic Rescue uses files called 'recipes'. These files have strings and
+ commands to identify and extract data from devices or forensics images.
+ So, you can write your own recipes. Currently, there are the following
+ recipes: avi, canon-cr2, elf, flac, gpl, gzip, jpeg-exif, jpeg-jfif,
+ mbox, mbox-mozilla-inbox, mbox-mozilla-sent, mp3-id3v1, mp3-id3v2,
+ msoffice, nikon-raw, perl, png, ppm, sqlite and zip.
+ .
+ This package provides magicrescue, dupemap and magicsort commands.
+ magicrescue is a carver and is useful in forensics investigations.
+
+Package: maskprocessor
+Version: 0.73+git20170609.1708898-2+b1
+Priority: optional
+Section: utils
+Source: maskprocessor (0.73+git20170609.1708898-2)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 46.1 kB
+Depends: libc6 (>= 2.14)
+Homepage: https://github.com/hashcat/maskprocessor
+Download-Size: 12.1 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: high-performance word generator with a per-position configurable charset
+ Maskprocessor is a fast word list generator. It enumerates all combinations
+ from a given user-defined keyspace and outputs the results. Since it supports
+ different alphabets (which also can be combined) at different positions in the
+ generation template ('mask'), this approach allows a more fine-tunable
+ generation of candidates than using 'naive' brute force enumeration of words.
+ Masks are defined using the description also used in the Hashcat password
+ recovery utility.
+
+Package: masscan
+Version: 2:1.0.5+ds1-3
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 389 kB
+Depends: libc6 (>= 2.15)
+Homepage: https://github.com/robertdavidgraham/masscan
+Download-Size: 179 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: TCP port scanner
+ MASSCAN is TCP port scanner which transmits SYN packets
+ asynchronously and produces results similar to nmap,
+ the most famous port scanner. Internally, it operates
+ more like scanrand, unicornscan, and ZMap, using
+ asynchronous transmission.
+ It's a flexible utility that allows arbitrary address and
+ port ranges.
+
+Package: mdk3
+Version: 6.0-6
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 175 kB
+Depends: aircrack-ng, libc6 (>= 2.14)
+Homepage: http://aspj.aircrack-ng.org/index.html#mdk3
+Download-Size: 82.5 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Wireless attack tool for IEEE 802.11 networks
+ MDK is a proof-of-concept tool to exploit common
+ IEEE 802.11 (wifi) protocol weaknesses.
+ Features:
+   * Bruteforce MAC Filters.
+   * Bruteforce hidden SSIDs (some small SSID wordlists included).
+   * Probe networks to check if they can hear you.
+   * Intelligent Authentication-DoS to freeze APs (with success checks).
+   * FakeAP - Beacon Flooding with channel hopping (can crash NetStumbler and
+     some buggy drivers)
+   * Disconnect everything (aka AMOK-MODE) with Deauthentication and
+     Disassociation packets.
+   * WPA TKIP Denial-of-Service.
+   * WDS Confusion - Shuts down large scale multi-AP installations.
+
+Package: mdk4
+Version: 4.1+git20200420-2
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 194 kB
+Depends: aircrack-ng, libc6 (>= 2.14), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libpcap0.8 (>= 0.9.8)
+Homepage: https://github.com/aircrack-ng/mdk4
+Download-Size: 67.2 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Wireless attack tool for IEEE 802.11 networks
+ This package contains a proof-of-concept tool to exploit common IEEE 802.11
+ protocol weaknesses.
+ .
+ MDK4 is a new version of MDK3. MDK4 is a Wi-Fi testing tool from E7mer of
+ 360PegasusTeam, ASPj of k2wrlz, it uses the osdep library from the aircrack-ng
+ project to inject frames on several operating systems.
+ .
+ IMPORTANT: It is your responsibility to make sure you have permission from the
+ network owner before running MDK against it.
+
+Package: medusa
+Version: 2.2-7
+Priority: optional
+Section: admin
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 808 kB
+Depends: libc6 (>= 2.29), libgcrypt20 (>= 1.8.0), libgnutls30 (>= 3.6.5), libpq5, libssh2-1 (>= 1.2.5), libssl1.1 (>= 1.1.0), libsvn1 (>= 1.8)
+Homepage: http://foofus.net/?page_id=51
+Tag: admin::monitoring, implemented-in::c, interface::commandline,
+ network::scanner, protocol::tcp, protocol::udp, role::program,
+ scope::utility, security::authentication
+Download-Size: 153 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: fast, parallel, modular, login brute-forcer for network services
+ Medusa is intended to be a speedy, massively parallel, modular, login
+ brute-forcer. The goal is to support as many services which allow remote
+ authentication as possible. The author considers following items as some of
+ the key features of this application:
+      * Thread-based parallel testing. Brute-force testing can be
+        performed against multiple hosts, users or passwords
+        concurrently.
+      * Flexible user input. Target information (host/user/password) can
+        be specified in a variety of ways. For example, each item can be
+        either a single entry or a file containing multiple entries.
+        Additionally, a combination file format allows the user to
+        refine their target listing.
+      * Modular design. Each service module exists as an
+        independent .mod file. This means that no modifications are
+        necessary to the core application in order to extend the
+        supported list of services for brute-forcing.
+
+Package: memdump
+Version: 1.01-8
+Priority: optional
+Section: admin
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 45.1 kB
+Depends: libc6 (>= 2.4)
+Suggests: lime-forensics
+Homepage: http://www.porcupine.org/forensics/tct.html
+Tag: implemented-in::c, role::program, scope::utility
+Download-Size: 14.6 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: utility to dump memory contents to standard output
+ Program which dumps system memory to the standard output stream, skipping over
+ holes in memory maps. By default, the program dumps the contents of physical
+ memory.
+ .
+ This program will not work if CONFIG_STRICT_DEVMEM is enabled in kernel. Since
+ 2.6 version, several kernels are enabling this option by default.
+ .
+ memdump is useful in security tests and forensics investigations.
+
+Package: metacam
+Version: 1.2-13
+Priority: optional
+Section: graphics
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 147 kB
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Homepage: http://www.cheeseplant.org/~daniel/pages/metacam.html
+Tag: hardware::camera, implemented-in::c++, interface::commandline,
+ role::program, scope::utility, use::scanning, works-with-format::jpg,
+ works-with::image, works-with::image:raster
+Download-Size: 44.3 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: extract EXIF information from digital camera files
+ EXIF (Exchangeable Image File Format) is a standard for storing interchange
+ information in image files, especially those using JPEG compression. Most
+ digital cameras, including mobile phones, now use the EXIF format.
+ .
+ The format is part of the DCF standard created by JEIDA to encourage the
+ interoperability between imaging devices. In addition to the standard EXIF
+ fields, MetaCam also supports vendor-specific extensions from Nikon, Olympus,
+ Canon and Casio.
+ .
+ This program is useful in forensics investigations.
+
+Package: mfcuk
+Version: 0.3.8+git20180720-1+b2
+Priority: optional
+Section: net
+Source: mfcuk (0.3.8+git20180720-1)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 89.1 kB
+Depends: libc6 (>= 2.14), libnfc6 (>= 1.7.0~rc7)
+Homepage: https://github.com/nfc-tools/mfcuk
+Download-Size: 24.7 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: MiFare Classic Universal toolKit
+ Toolkit containing samples and various tools based on and around libnfc
+ and crapto1, with emphasis on Mifare Classic NXP/Philips RFID cards.
+ Special emphasis of the toolkit is on the following:
+ 1) mifare classic weakness demonstration/exploitation
+ 2) demonstrate use of libnfc (and ACR122 readers)
+ 3) demonstrate use of Crapto1 implementation to confirm internal workings
+ and to verify theoretical/practical weaknesses/attacks.
+
+Package: mfoc
+Version: 0.10.7+git20180724-1+b2
+Priority: optional
+Section: utils
+Source: mfoc (0.10.7+git20180724-1)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 71.7 kB
+Depends: libc6 (>= 2.10), libnfc6 (>= 1.7.0~rc7)
+Homepage: https://github.com/nfc-tools/mfoc
+Download-Size: 27.6 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: MIFARE Classic offline cracker
+ MFOC is an open source implementation of "offline nested" attack by Nethemba.
+ .
+ This program allow to recover authentication keys from MIFARE Classic card.
+ .
+ Please note that MFOC is able to recover keys from target only if it have
+ a known key: default one (hardcoded in MFOC) or custom one (user provided
+ using command line).
+
+Package: missidentify
+Version: 1.0-11
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 44.0 kB
+Depends: libc6 (>= 2.4)
+Homepage: http://missidentify.sf.net
+Tag: admin::forensics, interface::commandline, role::program, scope::utility,
+ security::antivirus, security::forensics, use::scanning,
+ use::searching, works-with::file
+Download-Size: 14.2 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: find win32 applications
+ Miss Identify (missidentify) is a program to find MS Windows type win32
+ applications. By default, it displays the filename of any executable that
+ does not have an extension, as exe, dll, com, sys, cpl, hxs, hxi, olb, rll
+ or tlb. It can also display all the executables regardless the extension.
+ .
+ Miss Identify is useful in forensics investigations.
+
+Package: myrescue
+Version: 0.9.8-3
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 85.0 kB
+Depends: libc6 (>= 2.14)
+Homepage: http://myrescue.sf.net
+Tag: admin::forensics, admin::recovery, hardware::storage,
+ interface::commandline, role::program
+Download-Size: 25.5 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: rescue data from damaged disks
+ myrescue is a program to rescue the still-readable data from a damaged
+ harddisk, CD-ROM, DVD, flash drives, etc. It is similar in purpose to
+ dd_rescue (or ddrescue), but it tries to quickly get out of damaged
+ areas to first handle the not yet damaged part of the disk and return
+ later.
+ .
+ This package is useful to recover data from any media and for forensics
+ investigations.
+
+Package: nasty
+Version: 0.6-4
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 33.8 kB
+Depends: libc6 (>= 2.4), libgpgme11 (>= 1.2.0)
+Homepage: http://www.vanheusden.com/nasty/
+Tag: admin::recovery, role::program, scope::utility, security::cryptography
+Download-Size: 9,892 B
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: tool which helps you to recover your GPG passphrase
+ Nasty is a program that helps you to recover the passphrase of your PGP or
+ GPG-key in case you forget or lost it. The following features will make things
+ easier:
+  - set minimum/maximum length of the passphrase
+  - incremental mode, random mode or reads a file for guessing
+  - charset filter
+ .
+ This package is useful in forensics investigations.
+
+Package: nbtscan
+Version: 1.6-3
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 62.5 kB
+Depends: libc6 (>= 2.15)
+Homepage: https://github.com/resurrecting-open-source-projects/nbtscan
+Tag: interface::commandline, network::scanner, protocol::smb, role::program,
+ scope::utility, use::scanning
+Download-Size: 23.2 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: scan networks searching for NetBIOS information
+ NBTscan is a program for scanning IP networks for NetBIOS name information.
+ It sends NetBIOS status query to each address in supplied range and lists
+ received information in human readable form. For each responded host it
+ lists IP address, NetBIOS computer name, logged-in user name and MAC address
+ (such as Ethernet).
+ .
+ This program is useful for security checks and forensics investigations.
+
+Package: ncat
+Version: 7.91+dfsg1-1
+Priority: optional
+Section: net
+Source: nmap
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 556 kB
+Depends: libc6 (>= 2.15), liblua5.3-0, libpcap0.8 (>= 1.5.1), libssl1.1 (>= 1.1.0)
+Breaks: nmap (<< 7.70+dfsg1-2~)
+Replaces: nmap (<< 7.70+dfsg1-2~)
+Homepage: https://nmap.org/
+Download-Size: 387 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: NMAP netcat reimplementation
+ ncat is a reimplementation of Netcat by the NMAP project, providing
+ most of the features present in the original implementations, along
+ with some new features such as IPv6 and SSL support. Port scanning
+ support has been removed.
+
+Package: ncrack
+Version: 0.7+debian-2
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1,743 kB
+Depends: libc6 (>= 2.26), libgcc-s1 (>= 3.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 5.2)
+Homepage: https://nmap.org/ncrack/
+Download-Size: 698 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: High-speed network authentication cracking tool
+ Ncrack is a high-speed network authentication cracking tool.
+ It was built to help companies secure their networks by
+ proactively testing all their hosts and networking devices
+ for poor passwords. Security professionals also rely on
+ Ncrack when auditing their clients. Ncrack was designed
+ using a modular approach, a command-line syntax similar to
+ Nmap and a dynamic engine that can adapt its behaviour
+ based on network feedback. It allows for rapid, yet
+ reliable large-scale auditing of multiple hosts.
+ .
+ Ncrack's features include a very flexible interface granting
+ the user full control of network operations, allowing for
+ very sophisticated bruteforcing attacks, timing templates
+ for ease of use, runtime interaction similar to Nmap's and
+ many more. Protocols supported include RDP, SSH, http(s),
+ SMB, pop3(s), VNC, FTP, and telnet.
+ .
+ Be sure to read the Ncrack man page (https://nmap.org/ncrack/man.html)
+ to fully understand Ncrack usage.
+
+Package: ndiff
+Version: 7.91+dfsg1-1
+Priority: optional
+Section: net
+Source: nmap
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 391 kB
+Depends: python3-lxml, python3:any
+Recommends: nmap
+Breaks: nmap (<< 7.91+dfsg1-1), zenmap (<< 6.47-5~)
+Replaces: zenmap (<< 6.47-5~)
+Homepage: https://nmap.org/
+Download-Size: 306 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: The Network Mapper - result compare utility
+ Ndiff is a tool to aid in the comparison of Nmap scans. It takes two
+ Nmap XML output files and prints the differences between them them:
+ hosts coming up and down, ports becoming open or closed, and things like that.
+ It can produce output in human-readable text or machine-readable XML formats.
+
+Package: nmap
+Version: 7.91+dfsg1-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 4,559 kB
+Depends: nmap-common (= 7.91+dfsg1-1), libc6 (>= 2.29), libgcc-s1 (>= 3.0), liblinear4 (>= 2.01+dfsg), liblua5.3-0, libpcap0.8 (>= 1.5.1), libpcre3, libssh2-1 (>= 1.2.9), libssl1.1 (>= 1.1.0), libstdc++6 (>= 5.2), lua-lpeg (>= 1.0.2), zlib1g (>= 1:1.1.4)
+Suggests: ncat, ndiff, zenmap
+Homepage: https://nmap.org/
+Tag: admin::monitoring, implemented-in::c, interface::commandline,
+ network::scanner, role::program, scope::utility, use::scanning
+Download-Size: 1,901 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: The Network Mapper
+ Nmap is a utility for network exploration or security auditing. It
+ supports ping scanning (determine which hosts are up), many port
+ scanning techniques, version detection (determine service protocols
+ and application versions listening behind ports), and TCP/IP
+ fingerprinting (remote host OS or device identification). Nmap also
+ offers flexible target and port specification, decoy/stealth scanning,
+ sunRPC scanning, and more. Most Unix and Windows platforms are
+ supported in both GUI and commandline modes. Several popular handheld
+ devices are also supported, including the Sharp Zaurus and the iPAQ.
+
+Package: o-saft
+Version: 19.01.19-1
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 2,160 kB
+Depends: libio-socket-ssl-perl, libnet-dns-perl, libnet-ssleay-perl, libreadonly-perl, openssl, perl
+Recommends: libperl-critic-perl, tk (>= 8.5)
+Homepage: https://www.owasp.org/index.php/O-Saft
+Download-Size: 446 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: SSL advanced forensic tool
+ O-Saft is an easy to use tool to show information about SSL certificates and
+ tests the SSL connection according to a given list of ciphers and various SSL
+ configurations.
+ .
+ It's designed to be used by penetration testers, security auditors or server
+ administrators. The idea is to show the important information or the special
+ checks with a simple call of the tool. However, it provides a wide range of
+ options so that it can be used for comprehensive and special checks by
+ experienced people.
+
+Package: ophcrack-cli
+Version: 3.8.0-2+b1
+Priority: optional
+Section: admin
+Source: ophcrack (3.8.0-2)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 177 kB
+Depends: libc6 (>= 2.29), libexpat1 (>= 2.0.1), libssl1.1 (>= 1.1.0)
+Homepage: http://ophcrack.sourceforge.net/
+Tag: admin::recovery, implemented-in::c, interface::commandline,
+ role::program
+Download-Size: 68.2 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Microsoft Windows password cracker using rainbow tables (cmdline)
+ Ophcrack is a Windows password cracker based on a time-memory trade-off
+ using rainbow tables. This is a new variant of Hellman's original trade-off,
+ with better performance. It recovers 99.9% of alphanumeric passwords in
+ seconds.
+ .
+ It works for Windows NT/2000/XP/Vista/7.
+ .
+ This package contains ophcrack with command line interface only.
+
+Package: outguess
+Version: 1:0.2.2-5
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 267 kB
+Depends: libc6 (>= 2.14)
+Homepage: https://github.com/resurrecting-open-source-projects/outguess
+Tag: interface::commandline, role::program, scope::utility,
+ security::cryptography, works-with-format::jpg, works-with::image,
+ works-with::image:raster
+Download-Size: 88.1 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: universal steganographic tool
+ OutGuess is a universal tool for steganography that allows the insertion
+ of hidden information into the redundant bits of data sources. The nature
+ of the data source is irrelevant to the core of OutGuess.
+ .
+ The program relies on data specific handlers that will extract redundant
+ bits and write them back after modification. The supported formats are
+ JPEG, PPM and PNM.
+ .
+ This package is useful in forensics investigations and security actions.
+
+Package: pasco
+Version: 20040505-4
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 34.8 kB
+Depends: libc6 (>= 2.4)
+Homepage: https://sf.net/projects/odessa
+Tag: admin::forensics, interface::commandline, role::program, scope::utility,
+ security::forensics, security::log-analyzer, use::converting,
+ works-with-format::plaintext
+Download-Size: 9,928 B
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Internet Explorer cache forensic analysis tool
+ Pasco is a forensic tool that examines the content of cache files (index.dat)
+ produced by Microsoft Internet Explorer.
+ .
+ It parses the file and outputs a field separated that can be loaded in a
+ spreadsheet.
+ .
+ This package is useful in forensics investigations.
+
+Package: patator
+Version: 0.9-2
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 188 kB
+Depends: default-jre, ldap-utils, python3-psycopg2, unzip, python3-ajpy, python3-crypto, python3-dnspython, python3-impacket, python3-ipy, python3-mysqldb, python3-openssl, python3-paramiko, python3-pyasn1, python3-pycurl, python3-pysnmp4, python3:any
+Recommends: freerdp2-x11, ike-scan
+Homepage: https://github.com/lanjelot/patator
+Download-Size: 44.6 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Multi-purpose brute-forcer
+ Patator is a multi-purpose brute-forcer, with a modular
+ design and a flexible usage.
+ .
+ Currently it supports the following modules:
+  + ftp_login     : Brute-force FTP
+  + ssh_login     : Brute-force SSH
+  + telnet_login  : Brute-force Telnet
+  + smtp_login    : Brute-force SMTP
+  + smtp_vrfy     : Enumerate valid users using SMTP VRFY
+  + smtp_rcpt     : Enumerate valid users using SMTP RCPT TO
+  + finger_lookup : Enumerate valid users using Finger
+  + http_fuzz     : Brute-force HTTP
+  + ajp_fuzz      : Brute-force AJP
+  + pop_login     : Brute-force POP3
+  + pop_passd     : Brute-force poppassd (http://netwinsite.com/poppassd/)
+  + imap_login    : Brute-force IMAP4
+  + ldap_login    : Brute-force LDAP
+  + dcom_login    : Brute-force DCOM
+  + smb_login     : Brute-force SMB
+  + smb_lookupsid : Brute-force SMB SID-lookup
+  + rlogin_login  : Brute-force rlogin
+  + vmauthd_login : Brute-force VMware Authentication Daemon
+  + mssql_login   : Brute-force MSSQL
+  + mysql_login   : Brute-force MySQL
+  + mysql_query   : Brute-force MySQL queries
+  + rdp_login     : Brute-force RDP (NLA)
+  + pgsql_login   : Brute-force PostgreSQL
+  + vnc_login     : Brute-force VNC
+  + dns_forward   : Forward DNS lookup
+  + dns_reverse   : Reverse DNS lookup
+  + snmp_login    : Brute-force SNMP v1/2/3
+  + ike_enum      : Enumerate IKE transforms
+  + unzip_pass    : Brute-force the password of encrypted ZIP files
+  + keystore_pass : Brute-force the password of Java keystore files
+  + umbraco_crack : Crack Umbraco HMAC-SHA1 password hashes
+  + tcp_fuzz      : Fuzz TCP services
+  + dummy_test    : Testing module
+
+Package: pff-tools
+Version: 20180714-2+b2
+Priority: optional
+Section: admin
+Source: libpff (20180714-2)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1,008 kB
+Depends: libpff1 (= 20180714-2+b2), libc6 (>= 2.14)
+Homepage: https://github.com/libyal/libpff
+Download-Size: 368 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: utilities for MS Outlook PAB, PST and OST files
+ Libpff is a library to access Personal Folder File (PFF) and Offline Folder
+ File (OFF) formats. Those files formats are used by MS Outlook in PAB
+ (Personal Address Book), PST (Personal Storage Table) and OST
+ (Offline Storage Table) files.
+ .
+ This package contains tools to exports PAB, PST and OST files.
+
+Package: pipebench
+Version: 0.40-6
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 31.7 kB
+Depends: libc6 (>= 2.4)
+Homepage: http://www.habets.pp.se/synscan/programs.php?prog=pipebench
+Tag: interface::commandline, role::program, scope::utility
+Download-Size: 9,576 B
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: measure the speed of stdin/stdout communication
+ Pipebench shows the current throughput and amount of data going
+ through a pipe.
+ .
+ This is useful in forensics investigations and other actions.
+
+Package: pixiewps
+Version: 1.4.2-4
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 121 kB
+Depends: libc6 (>= 2.14)
+Homepage: https://github.com/wiire/pixiewps
+Download-Size: 48.8 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Offline WPS bruteforce tool
+ Pixiewps is a tool written in C used to bruteforce offline the WPS pin
+ exploiting the low or non-existing entropy of some APs (pixie dust attack).
+ It is meant for educational purposes only.
+
+Package: pnscan
+Version: 1.14.1-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 67.6 kB
+Depends: libc6 (>= 2.7)
+Homepage: https://github.com/ptrrkssn/pnscan
+Tag: interface::commandline, network::scanner, role::program, scope::utility,
+ use::scanning
+Download-Size: 19.3 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Multi threaded port scanner
+ Pnscan is a multi threaded port scanner that can scan a large network
+ very quickly. If does not have all the features that nmap have but
+ is much faster.
+
+Package: polenum
+Version: 1.6.1-1
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 27.6 kB
+Depends: python3:any, python3-impacket
+Homepage: https://github.com/Wh1t3Fox/polenum/
+Download-Size: 7,136 B
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Extracts the password policy from a Windows system
+ polenum is a Python script which uses the Impacket Library from CORE Security
+ Technologies to extract the password policy information from a windows machine.
+ This allows a non-windows (Linux, Mac OSX, BSD etc..) user to query the
+ password policy of a remote windows box without the need to have access to a
+ windows machine.
+
+Package: pompem
+Version: 0.2.0-6
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 52.2 kB
+Depends: python3, python3-requests
+Homepage: https://github.com/rfunix/Pompem
+Download-Size: 10.6 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Exploit and Vulnerability Finder
+ Find exploit with a system of advanced search, designed to automate the search
+ for Exploits and Vulnerability in the most important databases facilitating
+ the work of pentesters, ethical hackers and forensics expert. Performs searches
+ in databases: PacketStorm security, CXSecurity, ZeroDay, Vulners, National
+ Vulnerability Database, WPScan Vulnerability Database. This tool is essential
+ in the security of networks and systems.
+ .
+ The search results can be exported to HTML or text format.
+
+Package: recoverdm
+Version: 0.20-7
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 64.5 kB
+Depends: libc6 (>= 2.7)
+Homepage: http://www.vanheusden.com/recoverdm
+Tag: admin::filesystem, admin::forensics, admin::recovery, hardware::storage,
+ interface::commandline, role::program, scope::utility, use::scanning
+Download-Size: 17.9 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: recover files on disks with damaged sectors
+ recoverdm recover disks with bad sectors. You can recover files as well
+ complete devices. In case it finds sectors which simply cannot be recovered,
+ it writes an empty sector to the output file and continues.
+ .
+ When recovering a CD or a DVD and the program cannot read the sector in
+ "normal mode", then the program will try to read the sector in "RAW mode"
+ (without error-checking etc.). This toolkit also has a utility called
+ 'mergebad' which merges multiple images into one.
+ .
+ This package is useful in forensics investigations.
+
+Package: recoverjpeg
+Version: 2.6.3-3
+Priority: optional
+Section: graphics
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 71.7 kB
+Depends: exif, graphicsmagick-imagemagick-compat | imagemagick, python3, libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Homepage: http://www.rfc1149.net/devel/recoverjpeg
+Tag: admin::forensics, admin::recovery, interface::commandline,
+ role::program, scope::utility, use::scanning, works-with::image,
+ works-with::image:raster
+Download-Size: 22.5 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: recover JFIF (JPEG) pictures and MOV movies
+ recoverjpeg tries to recover JFIF (JPEG) pictures and MOV movies from
+ a peripheral. This may be useful if you mistakenly overwrite a partition
+ or if a device such as a digital camera memory card is bogus.
+ .
+ This package provides these executables: recoverjpeg, recovermov,
+ remove-duplicates and sort-pictures. The remove-duplicates is useful to
+ remove duplicate files found. sort-pictures can be used to sort pictures
+ according to exif date.
+ .
+ This package acts as a carver (data carving) and is useful in forensics
+ investigations.
+
+Package: reglookup
+Version: 1.0.1+svn287-8
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 89.1 kB
+Depends: libc6 (>= 2.14), libregfi1 (>= 1.0.1), libtalloc2 (>= 2.0.4~git20101213)
+Homepage: http://projects.sentinelchicken.org/reglookup/
+Tag: admin::forensics, interface::commandline, role::program,
+ security::forensics, use::converting, works-with-format::TODO
+Download-Size: 27.1 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: utility to analysis for Windows NT-based registry
+ RegLookup is a system to direct analysis of Windows NT-based registry
+ files providing command line tools, a C API, and a Python module for
+ accessing registry data structures. The project has a focus on providing
+ tools for digital forensics investigations (though is useful for many
+ purposes), and includes algorithms for retrieving deleted data structures
+ from registry hives.
+ .
+ Currently the program allows one to read an entire registry and output it
+ in a (mostly) standardized, quoted format. It also provides features for
+ filtering of results based on registry path and data type. The package
+ provides the following commands: reglookup, reglookup-recover and
+ reglookup-timeline.
+
+Package: rephrase
+Version: 0.2-3+b1
+Priority: optional
+Section: utils
+Source: rephrase (0.2-3)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 41.0 kB
+Depends: libc6 (>= 2.4), gnupg
+Homepage: http://www.roguedaemon.net/rephrase/
+Tag: admin::recovery, role::program
+Download-Size: 12.9 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Specialized passphrase recovery tool for GnuPG
+ If you can nearly remember your GnuPG passphrase - but not quite - then
+ Rephrase may be able to help. Tell Rephrase the parts of the passphrase you
+ know, and any number of alternatives for the parts you're not sure about; and
+ Rephrase will try all the alternatives, in all possible combinations, and tell
+ you which combination (if any) gives you the correct passphrase.
+
+Package: rfdump
+Version: 1.6-7
+Priority: optional
+Section: electronics
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 254 kB
+Depends: libc6 (>= 2.15), libexpat1 (>= 2.0.1), libglade2-0 (>= 1:2.6.4-2~), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.8.0)
+Homepage: http://www.rfdump.org/
+Tag: hardware::TODO, implemented-in::c, interface::graphical, interface::x11,
+ role::program, uitoolkit::gtk
+Download-Size: 73.4 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: tool to decode RFID tag data
+ RFDump is a tool to decode RFID tags and show their meta information:
+ tag ID, tag type, manufacturer etc. The user data memory of a tag can
+ be displayed and modified using either a hex or an ASCII editor. In
+ addition, the integrated cookie feature demonstrates how easy it is
+ for a company to abuse RFID technology to spy on their customers.
+ RFDump works with the ACG multi-tag reader or similar card reader
+ hardware.
+
+Package: rhash
+Version: 1.4.0-1
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 237 kB
+Depends: librhash0 (>= 1.4.0-1), libc6 (>= 2.14)
+Recommends: libssl1.1
+Homepage: http://rhash.sourceforge.net
+Tag: devel::lang:c, devel::lang:c++, devel::library, implemented-in::c,
+ interface::commandline, role::devel-lib, role::program, scope::utility,
+ use::checking, use::scanning, works-with::file
+Download-Size: 67.3 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: utility for computing hash sums and magnet links
+ RHash is a console utility for calculation and verification of magnet links
+ and a wide range of hash sums like CRC32, MD4, MD5, SHA1, SHA256, SHA512,
+ AICH, ED2K, Tiger, DC++ TTH, BitTorrent BTIH, GOST R 34.11-94, RIPEMD-160,
+ HAS-160, EDON-R, Whirlpool and Snefru.
+ Hash sums are used to ensure and verify integrity of large volumes of data
+ for a long-term storing or transferring.
+ .
+ Features:
+  * Output in a predefined (SFV, BSD-like) or a user-defined format.
+  * Can calculate Magnet links.
+  * Ability to process directories recursively.
+  * Updating hash files (adding hash sums of files missing in the hash file).
+  * Portability: the program works the same on Linux, *BSD or Windows.
+
+Package: rifiuti
+Version: 20040505-3
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 30.7 kB
+Depends: libc6 (>= 2.4)
+Homepage: https://sf.net/projects/odessa
+Tag: admin::forensics, role::program, security::forensics, use::scanning
+Download-Size: 7,504 B
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: MS Windows recycle bin analysis tool
+ Rifiuti is a tool to examine the INFO2 files. The INFO2 file gives meta
+ information about the files found in the MS Windows recycle bin.
+ .
+ This package is useful in forensics investigations.
+
+Package: rifiuti2
+Version: 0.7.0-2
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 137 kB
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.39.4)
+Homepage: https://abelcheung.github.io/rifiuti2
+Tag: implemented-in::c, interface::commandline, role::program,
+ security::forensics
+Download-Size: 36.7 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: replacement for rifiuti, a MS Windows recycle bin analysis tool
+ Rifiuti2 analyses recycle bin files from Windows. Analysis of Windows
+ recycle bin is usually carried out during Windows computer forensics.
+ .
+ Rifiuti2 can extract file deletion time, original path and size of deleted
+ files and whether the deleted files have been moved out from the recycle
+ bin since they are trashed.
+ .
+ Rifiuti2 is a rewrite of rifiuti, which is originally written for identical
+ purpose. Then it was extended to cover more functionalities, such as:
+ .
+   * Handles recycle bin up to Windows 10;
+   * Handles ancient Windows like 95, NT4 and ME;
+   * Supports all localized versions of Windows - both Unicode-based ones
+     and legacy ones (using ANSI code page);
+   * Supports output in XML format as well as original tab-delimited text.
+ .
+ Rifiuti2 is designed to be portable and runs on command line environment. Two
+ programs rifiuti and rifiuti-vista are chosen depending on relevant Windows
+ recycle bin format.
+
+Package: rkhunter
+Version: 1.4.6-8
+Priority: optional
+Section: admin
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1,107 kB
+Pre-Depends: debconf (>= 0.5) | debconf-2.0
+Depends: binutils, file, lsof, net-tools, ucf (>= 0.28), perl:any
+Recommends: bsd-mailx | mailutils | s-nail | mailx, default-mta | mail-transport-agent, e2fsprogs, iproute2, unhide, unhide.rb, wget | curl
+Suggests: liburi-perl, libwww-perl, powermgmt-base
+Homepage: http://rkhunter.sourceforge.net
+Tag: implemented-in::shell, interface::commandline, role::program,
+ scope::utility, security::ids, security::integrity, use::checking,
+ use::scanning
+Download-Size: 256 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: rootkit, backdoor, sniffer and exploit scanner
+ Rootkit Hunter scans systems for known and unknown rootkits,
+ backdoors, sniffers and exploits.
+ .
+ It checks for:
+  - SHA256 hash changes;
+  - files commonly created by rootkits;
+  - executables with anomalous file permissions;
+  - suspicious strings in kernel modules;
+  - hidden files in system directories;
+ and can optionally scan within files.
+ .
+ Using rkhunter alone does not guarantee that a system is not
+ compromised. Running additional tests, such as chkrootkit, is
+ recommended.
+
+Package: rsakeyfind
+Version: 1:1.0-6
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 34.8 kB
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Homepage: https://citp.princeton.edu/our-work/memory/code/
+Tag: implemented-in::c++, role::program
+Download-Size: 10.4 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: locates BER-encoded RSA private keys in memory images
+ rsakeyfind is a tool that locates BER-encoded RSA private keys in MEMORY-IMAGE.
+ If a MODULUS-FILE is specified, it will locate private and public keys matching
+ the hex-encoded modulus read from this file.
+ .
+ This package is useful to several activities, as forensics investigations.
+
+Package: safecopy
+Version: 1.7-6
+Priority: optional
+Section: admin
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 100 kB
+Depends: libc6 (>= 2.15)
+Homepage: http://safecopy.sf.net
+Tag: admin::forensics, admin::recovery, hardware::storage, implemented-in::c,
+ role::program
+Download-Size: 48.0 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: data recovery tool for problematic or damaged media
+ Safecopy tries to get as much data from SOURCE as possible, even resorting
+ to device specific low level operations if applicable. This is achieved by
+ identifying problematic or damaged areas, skipping over them and continuing
+ reading afterwards. The corresponding area in the destination file is either
+ skipped (on initial creation that means padded with zeros) or deliberately
+ filled with a recognizable pattern to later find affected files on a corrupted
+ device. The work is similar to ddrescue, generating an image of the original
+ media. This media can be floppy disks, harddisk partitions, CDs, DVDs, tape
+ devices, where other tools like dd would fail due to I/O errors.
+ .
+ Safecopy uses an incremental algorithm to identify the exact beginning and
+ end of bad areas, allowing the user to trade minimum accesses to bad areas
+ for thorough data resurrection.
+ .
+ Multiple passes over the same file are possible, to first retrieve as much
+ data from a device as possible with minimum harm, and then trying to retrieve
+ some of the remaining data with increasingly aggressive read attempts.
+ .
+ Safecopy includes a low level I/O layer to read CDROM disks in raw mode,
+ and issue device resets and other helpful low level operations on a number
+ of other device classes.
+ .
+ Safecopy is useful in forensics investigations and disaster recovery.
+
+Package: samdump2
+Version: 3.0.0-7
+Priority: optional
+Section: admin
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 44.0 kB
+Depends: libc6 (>= 2.14), libssl1.1 (>= 1.1.0)
+Suggests: ophcrack
+Breaks: bkhive (<< 3.0.0)
+Replaces: bkhive (<< 3.0.0)
+Homepage: http://ophcrack.sourceforge.net/
+Tag: implemented-in::c, interface::commandline, role::program,
+ scope::utility, security::cryptography
+Download-Size: 17.0 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Dump Windows 2k/NT/XP password hashes
+ This tool is designed to dump Windows 2k/NT/XP password hashes from a SAM
+ file, using the syskey bootkey from the system hive.
+ .
+ This package also provides the functionality of bkhive, which recovers the
+ syskey bootkey from a Windows NT/2K/XP system hive.
+ .
+ Syskey is a Windows feature that adds an additional encryption layer to the
+ password hashes stored in the SAM database.
+
+Package: scalpel
+Version: 1.60-9
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 89.1 kB
+Depends: libc6 (>= 2.28)
+Homepage: http://www.digitalforensicssolutions.com/Scalpel
+Tag: admin::forensics, admin::recovery, role::program, scope::utility,
+ security::forensics
+Download-Size: 33.1 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: fast filesystem-independent file recovery
+ scalpel is a fast file carver that reads a database of header and footer
+ definitions and extracts matching files from a set of image files or raw
+ device files.
+ .
+ scalpel is filesystem-independent and will carve files from FAT16, FAT32,
+ exFAT, NTFS, Ext2, Ext3, Ext4, JFS, XFS, ReiserFS, raw partitions, etc.
+ .
+ scalpel is a complete rewrite of the Foremost 0.69 file carver and is
+ useful for both digital forensics investigations and file recovery.
+
+Package: scrounge-ntfs
+Version: 0.9-9+b1
+Priority: optional
+Section: admin
+Source: scrounge-ntfs (0.9-9)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 51.2 kB
+Depends: libc6 (>= 2.4)
+Homepage: http://thewalter.net/stef/software/scrounge/
+Tag: admin::filesystem, admin::recovery, hardware::storage,
+ implemented-in::c, role::program, scope::utility, works-with::file
+Download-Size: 18.5 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Data recovery program for NTFS filesystems
+ Scrounge NTFS is a data recovery program for NTFS filesystems. It reads each
+ block of the hard disk and try to rebuild the original filesystem tree into
+ a directory.
+ .
+ This package is useful in forensics investigations.
+
+Package: shed
+Version: 1.15-4+b1
+Priority: optional
+Section: admin
+Source: shed (1.15-4)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 60.4 kB
+Depends: libc6 (>= 2.15), libncurses6 (>= 6), libtinfo6 (>= 6)
+Homepage: http://shed.sf.net
+Tag: implemented-in::c, role::program, uitoolkit::ncurses, use::editing,
+ use::viewing, works-with::file, works-with::text
+Download-Size: 21.0 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: simple hex editor with a pico-style interface
+ shed (Simple Hex Editor) is an easy application for viewing and editing
+ files in text mode, using ncurses. The main features are:
+ .
+   - Displays each byte as ascii, hex, decimal, octal and binary;
+   - Allows changes to be input in all of the above displayed modes,
+     with bit toggling in the binary column;
+   - Simple Pico-style interface;
+   - Search resource;
+   - Can dump information to file;
+   - Small memory requirements because file is not loaded into memory;
+   - Large file support.
+ .
+ shed is useful in forensics investigations.
+
+Package: sleuthkit
+Version: 4.10.0+dfsg-1
+Priority: optional
+Section: admin
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1,547 kB
+Depends: file, libdate-manip-perl, perl:any, libafflib0v5 (>= 3.7.6), libc6 (>= 2.14), libewf2 (>= 20130416), libgcc-s1 (>= 4.2), libstdc++6 (>= 5.2), libtsk19 (>= 4.10.0+dfsg), libvhdi1 (>= 20150110), libvmdk1 (>= 20150516)
+Suggests: autopsy, mac-robber
+Conflicts: tct
+Homepage: http://www.sleuthkit.org/sleuthkit
+Tag: admin::forensics, admin::recovery, interface::commandline,
+ role::program, scope::utility
+Download-Size: 337 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: tools for forensics analysis on volume and filesystem data
+ The Sleuth Kit, also known as TSK, is a collection of UNIX-based command
+ line file and volume system forensic analysis tools. The filesystem tools
+ allow you to examine filesystems of a suspect computer in a non-intrusive
+ fashion. Because the tools do not rely on the operating system to process the
+ filesystems, deleted and hidden content is shown.
+ .
+ The volume system (media management) tools allow you to examine the layout of
+ disks and other media. You can also recover deleted files, get information
+ stored in slack spaces, examine filesystems journal, see partitions layout on
+ disks or images etc. But is very important clarify that the TSK acts over the
+ current filesystem only.
+ .
+ The Sleuth Kit supports DOS partitions, BSD partitions (disk labels), Mac
+ partitions, Sun slices (Volume Table of Contents), and GPT disks. With these
+ tools, you can identify where partitions are located and extract them so that
+ they can be analyzed with filesystem analysis tools.
+ .
+ Currently, TSK supports several filesystems, as NTFS, FAT, exFAT, HFS+, Ext3,
+ Ext4, UFS and YAFFS2.
+ .
+ This package contains the set of command line tools in The Sleuth Kit.
+
+Package: smbmap
+Version: 1.8.2-2
+Priority: optional
+Section: misc
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 79.9 kB
+Depends: python3-impacket, python3:any
+Homepage: https://github.com/ShawnDEvans/smbmap
+Download-Size: 21.9 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: handy SMB enumeration tool
+ SMBMap allows users to enumerate samba share drives across an entire domain.
+ List share drives, drive permissions, share contents, upload/download
+ functionality, file name auto-download pattern matching, and even execute
+ remote commands. This tool was designed with pen testing in mind, and is
+ intended to simplify searching for potentially sensitive data across large
+ networks.
+
+Package: snowdrop
+Version: 0.02b-13
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 193 kB
+Depends: libc6 (>= 2.7), libgnutls-openssl27 (>= 3.6.11-0)
+Homepage: http://lcamtuf.coredump.cx/
+Tag: interface::commandline, role::program, scope::utility,
+ security::integrity, works-with::text
+Download-Size: 52.8 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: plain text watermarking and watermark recovery
+ Snowdrop provides reliable, difficult to remove steganographic watermarking of
+ text documents (internal memos, draft research papers, advisories and other
+ writing) and C sources (limited distribution software, licensed software,
+ or freely available code) so that:
+  (1) leaks can be identified if the data goes public.
+  (2) original source can be determined and demonstrated if part of the
+      document is claimed by somebody else, copied without permission, etc.
+ Snowdrop uses redundant steganography using four different logical
+ channels, and should be proof to many modifications, including reformatting,
+ spell checking and so on.
+ .
+ This package is useful in forensic investigations and security actions. It
+ provides three commands: sd-eng, sd-engf and sd-c. sd-eng and sd-engf provide
+ watermarking for draft-quality and fine-quality English language text
+ documents, respectively, whereas sd-c provides experimental C source code
+ watermarking.
+ .
+ Warning: Snowdrop is currently in beta, and may produce bad or corrupted
+ results, especially when run on C source code.
+
+Package: ssdeep
+Version: 2.14.1+git20180629.57fcfff-1+b1
+Priority: optional
+Section: admin
+Source: ssdeep (2.14.1+git20180629.57fcfff-1)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 85.0 kB
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Homepage: https://github.com/ssdeep-project/ssdeep
+Tag: admin::forensics, admin::recovery, interface::commandline,
+ role::program, scope::utility, security::cryptography,
+ security::forensics, use::scanning, works-with::file
+Download-Size: 34.7 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: recursive piecewise hashing tool
+ ssdeep is a tool for recursive computing and matching of Context Triggered
+ Piecewise Hashing (aka Fuzzy Hashing).
+ .
+ Fuzzy hashing is a method for comparing similar but not identical files.
+ This tool can be used to compare files like regular hashing does (like
+ md5sum or sha1sum) but it will find similar files with little differences.
+ .
+ For example, it can be used to identify modified versions of known files
+ even if data has been inserted, modified, or deleted in the new files.
+ .
+ This package is useful in forensics investigations.
+
+Package: ssldump
+Version: 1.2-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 156 kB
+Depends: libc6 (>= 2.14), libpcap0.8 (>= 0.9.8), libssl1.1 (>= 1.1.0)
+Suggests: tcpdump
+Homepage: https://github.com/adulau/ssldump
+Tag: interface::commandline, protocol::ssl, role::program, scope::utility,
+ use::scanning
+Download-Size: 50.5 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: SSLv3/TLS network protocol analyzer
+ This program will dump the traffic on a network and analyze it for
+ SSLv3/TLS network traffic, typically used to secure TCP connections.
+ When it identifies this traffic, it decodes the results.  When
+ provided with the appropriate keying material, it will also decrypt
+ the connections and display the application data traffic.
+ .
+ ssldump is based on tcpdump, a network monitoring and data acquisition
+ tool.
+
+Package: statsprocessor
+Version: 0.11+git20160316-2
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 46.1 kB
+Depends: libc6 (>= 2.14)
+Homepage: https://github.com/hashcat/statsprocessor
+Download-Size: 11.8 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: word generator based on per-position Markov chains
+ Statsprocessor is a word generator based on per-position Markov chains
+ packed into a single stand-alone binary. It generates candidate words based
+ on a Hashcat format .hcstat file by using this information to determine which
+ letter is following which letter based on the analysis of the original input
+ dictionary used to generate the .hcstat. The resulting words can then, for
+ example, be postprocessed and fed into Hashcat or other password recovery
+ tools.
+
+Package: steghide
+Version: 0.5.1-15
+Priority: optional
+Section: misc
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 488 kB
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 3.0), libjpeg62-turbo (>= 1.3.1), libmcrypt4, libmhash2 (>= 0.9.9.9), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Homepage: http://steghide.sourceforge.net/
+Tag: interface::commandline, role::program, scope::utility,
+ security::cryptography, works-with::image, works-with::image:raster
+Download-Size: 144 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: steganography hiding tool
+ Steghide is steganography program which hides bits of a data file
+ in some of the least significant bits of another file in such a way
+ that the existence of the data file is not visible and cannot be proven.
+ .
+ Steghide is designed to be portable and configurable and features hiding
+ data in bmp, jpeg, wav and au files, blowfish encryption, MD5 hashing of
+ passphrases to blowfish keys, and pseudo-random distribution of hidden bits
+ in the container data.
+ .
+ Steghide is useful in digital forensics investigations.
+
+Package: stegsnow
+Version: 20130616-6
+Priority: optional
+Section: misc
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 57.3 kB
+Depends: libc6 (>= 2.7)
+Homepage: http://www.darkside.com.au/snow
+Download-Size: 16.0 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: steganography using ASCII files
+ This utility can conceal messages in ASCII text by appending whitespaces to
+ the end of lines. Because spaces and tabs are generally not visible in text
+ viewers, the message is effectively hidden from casual observers. And if the
+ built-in encryption is used, the message cannot be read even if it is detected.
+ .
+ About the name: locating trailing whitespace in text is like finding a polar
+ bear in a snowstorm. And it uses the ICE encryption algorithm, so the name is
+ thematically consistent.
+ .
+ This package is useful for personal security, forensics investigations and
+ other actions.
+
+Package: sucrack
+Version: 1.2.3-5+b1
+Priority: optional
+Section: admin
+Source: sucrack (1.2.3-5)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 52.2 kB
+Depends: libc6 (>= 2.8)
+Homepage: https://labs.portcullis.co.uk/tools/sucrack/
+Tag: role::program, scope::utility, security::cryptography
+Download-Size: 18.7 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: multithreaded su bruteforcer
+ sucrack is a multithreaded Linux/UNIX tool for cracking local
+ user accounts via wordlist bruteforcing su. This tool comes in
+ handy when you've gained access to a low-privilege user account
+ but are allowed to su to other users. Many su implementations
+ require a pseudo terminal to be attached in order to take the
+ password from the user. This can't be easily achieved with a
+ simple shell script. This tool, written in C, is highly
+ efficient and can attempt multiple logins at the same time.
+
+Package: tableau-parm
+Version: 0.2.0-5+b1
+Priority: optional
+Section: admin
+Source: tableau-parm (0.2.0-5)
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 34.8 kB
+Depends: libc6 (>= 2.4), libsgutils2-2 (>= 1.27)
+Homepage: http://projects.sentinelchicken.org/tableau-parm/
+Tag: admin::forensics, hardware::storage, interface::commandline,
+ role::program, security::forensics
+Download-Size: 11.5 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: tableau write-blocking bridge query/command utility
+ The tableau-parm is an small command line utility designed to interact with
+ Tableau forensic write blockers. It performs functions similar to the Tableau
+ Disk Monitor.
+ .
+ Is designed to interact with write-blocking forensics bridges produced by
+ Tableau, LLC. It can be used to query bridges for various bridge and device
+ data, as well as to disable DCO regions.
+
+Package: tcpick
+Version: 0.2.1-9
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 92.2 kB
+Depends: libc6 (>= 2.14), libpcap0.8 (>= 0.9.8)
+Homepage: http://tcpick.sourceforge.net
+Tag: admin::monitoring, interface::commandline, network::scanner,
+ protocol::ip, role::program, scope::utility, use::monitor,
+ works-with::network-traffic
+Download-Size: 37.9 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: TCP stream sniffer and connection tracker
+ This libpcap-based textmode sniffer can:
+  * track, reassemble and reorder TCP streams
+  * save the captured flows in different files or display them in the terminal
+  * display all the stream on the terminal with different display modes like
+    hexdump, hexdump + ascii, only printable characters, raw mode, colorized
+    mode ...
+  * handle several network interface types, including ethernet cards and PPP
+    interfaces
+
+Package: testssl.sh
+Version: 3.0.4+dfsg1-1
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 3,105 kB
+Depends: openssl (>= 1), bsdextrautils (>= 2.35.2-3) | bsdmainutils (<< 12.1.1~), procps, dnsutils
+Recommends: libengine-gost-openssl1.1
+Homepage: https://testssl.sh/
+Download-Size: 676 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Command line tool to check TLS/SSL ciphers, protocols and cryptographic flaws
+ testssl.sh is a free command line tool which checks a server's service
+ on any port for the support of TLS/SSL ciphers, protocols as well as
+ recent cryptographic flaws and more.
+ .
+ Key features
+ .
+  * Clear output: you can tell easily whether anything is good or bad
+ .
+  * Ease of installation: It works for Linux, Darwin, FreeBSD and
+   MSYS2/Cygwin out of the box: no need to install or configure
+   something, no gems, CPAN, pip or the like.
+ .
+  * Flexibility: You can test any SSL/TLS enabled and STARTTLS service,
+   not only webservers at port 443
+ .
+  * Toolbox: Several command line options help you to run YOUR test and
+   configure YOUR output
+ .
+  * Reliability: features are tested thoroughly
+ .
+  * Verbosity: If a particular check cannot be performed because of a
+   missing capability on your client side, you'll get a warning
+ .
+  * Privacy: It's only you who sees the result, not a third party
+ .
+  * Freedom: It's 100% open source. You can look at the code, see what's
+   going on and you can change it. Heck, even the development is open
+   (github)
+
+Package: undbx
+Version: 0.21-3
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 62.5 kB
+Depends: libc6 (>= 2.27)
+Homepage: https://github.com/ZungBang/undbx
+Tag: role::program, scope::utility, works-with::mail
+Download-Size: 24.0 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: tool to extract, recover and undelete e-mail messages from .dbx files
+ UnDBX is a tool to extract, recover and undelete e-mail messages from MS
+ Outlook Express .dbx files (or similar e-mail programs in MS Windows).
+ Corrupted .dbx files can be parsed to try to recover messages from it. It
+ can also try to undelete messages, not only from Deleted Items but also
+ from fragments of deleted messages that were not overwritten.
+ .
+ UnDBX is useful in forensics investigations.
+
+Package: unhide
+Version: 20130526-4
+Priority: optional
+Section: admin
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 161 kB
+Depends: libc6 (>= 2.14)
+Suggests: rkhunter
+Homepage: http://www.unhide-forensics.info
+Tag: implemented-in::c, interface::commandline, role::program,
+ scope::utility, security::forensics, security::ids
+Download-Size: 53.2 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Forensic tool to find hidden processes and ports
+ Unhide is a forensic tool to find processes and TCP/UDP ports hidden by
+ rootkits, Linux kernel modules or by other techniques. It includes two
+ utilities: unhide and unhide-tcp.
+ .
+ unhide detects hidden processes using the following six techniques:
+   * Compare /proc vs /bin/ps output
+   * Compare info gathered from /bin/ps with info gathered by walking thru the
+     procfs.
+   * Compare info gathered from /bin/ps with info gathered from syscalls
+     (syscall scanning).
+   * Full PIDs space occupation (PIDs bruteforcing)
+   * Reverse search, verify that all thread seen by ps are also seen by the
+     kernel (/bin/ps output vs /proc, procfs walking and syscall)
+   * Quick compare /proc, procfs walking and syscall vs /bin/ps output
+ .
+ unhide-tcp identifies TCP/UDP ports that are listening but are not listed in
+ /bin/netstat through brute forcing of all TCP/UDP ports available.
+ .
+ This package can be used by rkhunter in its daily scans.
+ .
+ This package is useful for network security checks, in addition to forensics
+ investigations.
+
+Package: unhide.rb
+Version: 22-5
+Priority: optional
+Section: admin
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 32.8 kB
+Depends: ruby:any
+Suggests: rkhunter
+Homepage: https://launchpad.net/unhide.rb
+Tag: admin::forensics, implemented-in::ruby, interface::commandline,
+ role::program, scope::utility, security::forensics, security::ids,
+ use::scanning
+Download-Size: 8,680 B
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Forensics tool to find processes hidden by rootkits
+ Unhide.rb is a forensics tool to find processes hidden by rootkits.
+ .
+ It looks for active processes in many different ways. Processes found by
+ some means but not others are considered to be "hidden", and are reported
+ to the user.
+ .
+ Unhide.rb is a tentative of rewrite in Ruby of the original Unhide, which
+ is written in C. While being much faster, it does not implement all the
+ diagnostics of the original version. It is also less secure as it cannot
+ be statically compiled.
+ .
+ This package can be used by rkhunter in its daily scans.
+
+Package: vinetto
+Version: 1:0.8.0-2
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 77.8 kB
+Depends: python3:any, python3-setuptools, python3-pil
+Homepage: https://github.com/AtesComp/Vinetto
+Tag: admin::forensics, admin::recovery, role::program, security::forensics
+Download-Size: 17.9 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: forensics tool to examine Thumbs.db files
+ vinetto is a console program to extract thumbnail pictures and their metadata
+ from Thumbs.db files, that are generated under Microsoft Windows.
+ .
+ vinetto can help *nix-based forensics investigators to:
+ .
+   - easily preview thumbnails of deleted pictures on Windows systems;
+   - obtain information (dates, path, ...) about deleted pictures.
+
+Package: wapiti
+Version: 3.0.3+dfsg-2
+Priority: optional
+Section: python
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1,640 kB
+Depends: libjs-jquery, python3-bs4, python3-mako, python3-requests, python3-socks, python3-tld, python3-yaswfp, python3:any
+Homepage: http://wapiti.sourceforge.net/
+Tag: implemented-in::python, role::program, security::TODO, use::analysing
+Download-Size: 340 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: web application vulnerability scanner
+ Wapiti allows you to audit the security of your web applications.
+ It performs "black-box" scans, i.e. it does not study the source code of the
+ application but will scan the web pages of the deployed web applications,
+ looking for scripts and forms where it can inject data.
+ Once it gets this list, Wapiti acts like a fuzzer, injecting payloads to see
+ if a script is vulnerable.
+ .
+ Wapiti can detect the following vulnerabilities:
+  - Database Injection (PHP/ASP/JSP SQL Injections and XPath Injections)
+  - Cross Site Scripting (XSS) reflected and permanent
+  - File disclosure detection (local and remote include, require, fopen,
+    readfile...)
+  - Command Execution detection (eval(), system(), passtru()...)
+  - XXE (Xml eXternal Entity) injection
+  - CRLF Injection
+  - Search for potentially dangerous files on the server (thank to the Nikto db)
+  - Bypass of weak htaccess configurations
+  - Search for copies (backup) of scripts on the server
+  - Shellshock
+  - DirBuster like
+  - Server Side Request Forgery (through use of an external Wapiti website)
+
+Package: wfuzz
+Version: 3.1.0-1
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1,623 kB
+Depends: python3-pycurl, python3-pyparsing, python3-chardet, python3-six, python3:any
+Homepage: http://www.edge-security.com/wfuzz.php
+Download-Size: 283 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Web application bruteforcer
+ Wfuzz is a tool designed for bruteforcing Web Applications,
+ it can be used for finding resources not linked
+ directories, servlets, scripts, etc, bruteforce GET and
+ POST parameters for checking different kind of injections
+ (SQL, XSS, LDAP,etc), bruteforce Forms parameters
+ (User/Password), Fuzzing, etc.
+
+Package: wifite
+Version: 2.5.7-1
+Priority: optional
+Section: net
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 2,463 kB
+Depends: python3:any, aircrack-ng, reaver, tshark, net-tools, ieee-data
+Suggests: macchanger, bully, hashcat, hcxdumptool, hcxpcaptool
+Homepage: https://github.com/kimocoder/wifite2
+Download-Size: 802 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Python script to automate wireless auditing using aircrack-ng tools
+ Wifite is a tool to audit WEP or WPA encrypted wireless networks.
+ It uses aircrack-ng, pyrit, reaver, tshark tools to perform the audit.
+ .
+ This tool is customizable to be automated with only a few arguments
+ and can be trusted to run without supervision.
+
+Package: winregfs
+Version: 0.7-4
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 104 kB
+Depends: libc6 (>= 2.14), libfuse2 (>= 2.8)
+Homepage: https://github.com/jbruchon/winregfs
+Download-Size: 30.7 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Windows registry FUSE filesystem
+ Winregfs is a FUSE-based filesystem driver that enables accessing of Windows
+ registry hive files as ordinary filesystems. Registry hive file editing can
+ be performed with ordinary shell scripts and command-line tools once mounted.
+ .
+ fsck.winregfs scans a Windows registry hive file for problems that indicate
+ the hive has been damaged by hardware or software issues, reading recursively
+ the  key  and  value  data structures in the registry hive.
+ .
+ This package provides mount.winregfs and fsck.winregfs commands.
+ Winregfs is useful for pentesters, ethical hackers and forensics experts.
+
+Package: wipe
+Version: 0.24-7
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 93.2 kB
+Depends: libc6 (>= 2.15)
+Homepage: https://github.com/berke/wipe
+Tag: interface::commandline, role::program, scope::utility,
+ security::privacy, works-with::file
+Download-Size: 43.7 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: secure file deletion
+ Recovery of supposedly erased data from magnetic media is easier than
+ what many people would like to believe. A technique called Magnetic
+ Force Microscopy (MFM) allows any moderately funded opponent to recover
+ the last two or three layers of data written to disk. Wipe repeatedly
+ writes special patterns to the files to be destroyed, using the fsync()
+ call and/or the O_SYNC bit to force disk access.
+ .
+ Wipe can permanently delete data in hard disks and flash drives (caution!
+ several writes can damage solid medias).
+ .
+ This program is useful in anti-forensics and security activities.
+
+Package: xmount
+Version: 0.7.6-2
+Priority: optional
+Section: admin
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 288 kB
+Depends: libafflib0v5 (>= 3.7.6), libc6 (>= 2.14), libewf2 (>= 20121209), libfuse2 (>= 2.7.1-2~bpo40+1), zlib1g (>= 1:1.1.4)
+Homepage: https://www.pinguin.lu/
+Tag: admin::filesystem, admin::kernel, devel::lang:c, devel::library,
+ implemented-in::c, role::devel-lib, role::program
+Download-Size: 75.3 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: tool to crossmount between multiple input and output harddisk images
+ xmount allows you to convert on-the-fly between multiple input
+ and output harddisk image types. xmount creates a virtual file
+ system using FUSE (Filesystem in Userspace) that contains a
+ virtual representation of the input harddisk image. The virtual
+ representation can be in raw DD, VirtualBox's virtual disk file
+ (VDI) format, Microsoft's Virtual Hard Disk Image format (VHD)
+ or in VMware's VMDK format. Input harddisk images can be raw DD
+ or EWF (Expert Witness Compression Format) or AFF (Advanced
+ Forensic Format) files. In addition, xmount also supports
+ virtual write access to the output files that is redirected to a
+ cache file. This makes it for example possible to boot acquired
+ harddisk images using QEMU, KVM, VirtualBox, VMware or alike.
+
+Package: yara
+Version: 4.0.2-1
+Priority: optional
+Section: utils
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 444 kB
+Depends: libc6 (>= 2.29), libjansson4 (>= 2.1), libmagic1 (>= 5.12), libssl1.1 (>= 1.1.0), libyara4 (>= 4.0.0~)
+Homepage: https://virustotal.github.io/yara/
+Download-Size: 157 kB
+APT-Sources: http://deb.debian.org/debian testing/main amd64 Packages
+Description: Pattern matching swiss knife for malware researchers
+ YARA is a tool aimed at helping malware researchers to identify and
+ classify malware samples. With YARA, it is possible to create
+ descriptions of malware families based on textual or binary patterns
+ contained in samples of those families. Each description consists of
+ a set of strings and a Boolean expression which determines its logic.
+ .
+ Complex and powerful rules can be created by using binary strings with
+ wild-cards, case-insensitive text strings, special operators, regular
+ expressions and many other features.
+

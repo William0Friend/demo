@@ -1,0 +1,354 @@
+64tass - cross (turbo) assembler targeting the MOS 65xx series of micro processors
+adapta-kde - Port of the popular Gtk theme Adapta for Plasma 5 desktop
+apngasm - assemble APNG animation from PNG/TGA image sequence
+libasm-java - Java bytecode manipulation framework
+libasm-java-doc - Java bytecode manipulation framework (documentation)
+asmail - AfterStep mail monitor
+asmix - display a volume knob
+asmixer - AfterStep audio mixer
+libasmjit-dev - Complete x86/x64 JIT and AOT Assembler for C++ (development files)
+libasmjit0 - Complete x86/x64 JIT and AOT Assembler for C++
+asmon - system resource monitor dockapp for Afterstep and WindowMaker
+baloo-kf5 - framework for searching and managing metadata
+baloo-kf5-dev - framework for searching and managing metadata devel files
+libkf5baloo-doc - framework for searching and managing metadata core lib (documentation)
+libkf5baloo5 - framework for searching and managing metadata core lib.
+libkf5balooengine5 - framework for searching and managing metadata plugins
+binaryen - compiler and toolchain infrastructure library for WebAssembly
+breeze - Default Plasma theme (Metapackage)
+breeze-cursor-theme - Default Plasma cursor theme
+breeze-dev - Default Plasma theme (development files)
+kde-style-breeze - Widget style for Qt and KDE Software
+kwin-style-breeze - KWin Breeze Style
+grub-theme-breeze - Breeze theme for GRUB 2
+breeze-icon-theme - Default Plasma icon theme
+breeze-icon-theme-rcc - RCC resources for the breeze icon theme
+plymouth-theme-breeze - Breeze theme for Plymouth
+cct - visually comparing bacterial, plasmid, chloroplast, or mitochondrial sequences
+cct-examples - example data for testing the package cct
+clamtk - graphical front-end for ClamAV
+cpl-plugin-muse - ESO data reduction pipeline for the MUSE instrument
+cpl-plugin-naco - ESO data reduction pipeline for the NaCo instrument
+cpl-plugin-vimos - ESO data reduction pipeline for the VIMOS instrument
+crasm - Cross assembler for 6800/6801/6803/6502/65C02/Z80
+dasm - Macro assembler with support for several 8-bit microprocessors
+dbeacon - Multicast beacon
+diffoscope - in-depth visual diff tool for files, archives and directories
+diffoscope-minimal - in-depth visual diff tool for files, archives and directories (minimal package)
+dolphin - file manager
+libasm-dev - libasm development libraries and header files
+libasm1 - library with a programmable assembler interface
+libdebuginfod-dev - libdebuginfod development libraries and header files
+elisa - Simple music player with a focus on Plasma desktop integration and privacy
+elpa-buttercup - behaviour-driven testing for Emacs Lisp packages
+emscripten - LLVM-to-JavaScript Compiler
+fasm - fast assembler for the x86 and x86-64 architectures
+fml-asm - tool for assembling Illumina short reads in small regions
+fonts-aenigma - 465 free TrueType fonts by Brian Kent
+fonts-sil-zaghawa-beria - font for Zaghawa Beria (script used in western Sudan and eastern Chad)
+forensics-extra - Forensics Environment - extra console components (metapackage)
+frameworkintegration - KF5 cross-framework integration plugins
+libkf5style-dev - KF5 cross-framework integration plugins - KStyle
+libkf5style5 - KF5 cross-framework integration plugins - KStyle
+gentle - suite to plan genetic cloning
+gnome-shell-extension-dash-to-panel - combines the dash and the GNOME main panel into a single panel
+golang-github-dropbox-dropbox-sdk-go-unofficial-dev - Unofficial Go SDK for integrating with the Dropbox API v2
+golang-github-minio-blake2b-simd-dev - Fast hashing using pure Go implementation of BLAKE2b with SIMD instructions
+go-org - Org mode parser with HTML & pretty-printed Org rendering (program)
+golang-github-niklasfasching-go-org-dev - Org mode parser with HTML & pretty-printed Org rendering (Go library)
+golang-gopkg-pg.v5-dev - PostgreSQL client and ORM for Golang
+libgoocanvasmm-2.0-6 - C++ bindings for GooCanvas - shared library
+libgoocanvasmm-2.0-dev - C++ bindings for GooCanvas - development files
+libgoocanvasmm-2.0-doc - C++ bindings for GooCanvas - documentation and examples
+gputils - GNU PIC utilities
+gputils-common - headers and linker scripts for gputils
+gputils-doc - documentation for gputils
+intel2gas - converter from NASM assembly language to GAS
+irssi-scripts - collection of scripts for irssi
+jasmin-sable - Java class (.class) file assembler
+libjitescript-java - Java API for generating JVM bytecode
+libjnr-x86asm-java - Pure java x86 and x86_64 assembler
+kaccounts-integration - System to administer web accounts
+libkaccounts-dev - System to administer web accounts - development files
+libkaccounts2 - System to administer web accounts - shared library
+kde-cli-tools - tools to use KDE services from the command line
+kde-cli-tools-data - tools to use kioslaves from the command line
+kdeplasma-addons-data - locale files for kdeplasma-addons
+kwin-addons - additional desktop and window switchers for KWin
+plasma-calendar-addons - additional calendar plugins for Plasma 5
+plasma-dataengines-addons - additional data engines for Plasma
+plasma-runners-addons - additional runners for Plasma 5 and Krunner
+plasma-wallpapers-addons - additional wallpaper plugins for Plasma 5
+plasma-widgets-addons - additional widgets for Plasma 5
+kdeplasma-applets-xrdesktop - xrdesktop applet for KDE Plasma
+plasma-kdevelop - KDevelop plugins for Plasma
+libkf5filemetadata-doc - library for extracting file metadata (documentation)
+khotkeys - configure input actions settings
+khotkeys-data - configure input actions settings
+khotkeys-dev - configure input actions settings
+kirigami-gallery - set of QtQuick components targeted for mobile use
+kirigami2-dev - set of QtQuick components targeted for mobile use
+libkf5kirigami2-5 - set of QtQuick components targeted for mobile use
+libkf5kirigami2-doc - set of QtQuick components targeted for mobile use (documentation)
+qml-module-org-kde-kirigami2 - set of QtQuick components targeted for mobile use
+kleborate - tool to screen Klebsiella genome assemblies
+kleborate-examples - tool to screen Klebsiella genome assemblies (example data)
+kmail - full featured graphical email client
+kmenuedit - XDG menu editor
+libkf5runner-doc - Used to write plugins loaded at runtime called "Runners" (documentation)
+libkf5runner5 - Used to write plugins loaded at runtime called "Runners".
+qml-module-org-kde-runnermodel - Used to write plugins loaded at runtime called "Runners".
+kde-config-telepathy-accounts - KDE Control Module for managing Telepathy Accounts
+kde-telepathy-approver - KDED module for approving incoming conversations
+kde-telepathy-contact-list - Telepathy contact list for the KDE Plasma Desktop
+plasma-runner-telepathy-contact - Telepathy Contact KRunner plugin
+kde-telepathy-desktop-applets - KDE Telepathy contact plasmoid
+kde-telepathy-text-ui - Telepathy text chat UI for the KDE Plasma Desktop
+kup-backup - backup tool for KDE's Plasma desktop
+kwin-common - KDE window manager, common files
+kwin-data - KDE window manager data files
+kwin-dev - KDE window manager - devel files
+kwin-wayland - KDE window manager, wayland version, PREVIEW release
+kwin-wayland-backend-drm - KDE window manager drm plugin
+kwin-wayland-backend-fbdev - KDE window manager fbdev plugin
+kwin-wayland-backend-virtual - KDE window manager virtual plugin
+kwin-wayland-backend-wayland - KDE window manager nested wayland plugin
+kwin-wayland-backend-x11 - KDE window manager x11 plugin
+kwin-x11 - KDE window manager, X11 version
+libkwin4-effect-builtins1 - KDE window manager effect builtins library
+libkwineffects12a - KDE window manager effects library
+libkwinglutils12 - KDE window manager gl utils library
+libkwinxrenderutils12 - KDE window manager render utils library
+latte-dock - Dock based on plasma frameworks
+libatasmart-bin - ATA S.M.A.R.T. reading and parsing library - utilities
+libatasmart-dev - ATA S.M.A.R.T. reading and parsing library - development files
+libatasmart4 - ATA S.M.A.R.T. reading and parsing library
+caca-utils - text mode graphics utilities
+libdisasm-dev - disassembler library for x86 code (development files)
+libdisasm0 - disassembler library for x86 code
+x86dis - Frontend to libdisasm
+libgnomecanvasmm-2.6-1v5 - C++ wrappers for libgnomecanvas2 (shared library)
+libgnomecanvasmm-2.6-dev - C++ wrappers for libgnomecanvas2 (development files)
+libgnomecanvasmm-2.6-doc - C++ wrappers for libgnomecanvas2 (documentation)
+libmoosex-markasmethods-perl - moose extension to ark overload code symbols as methods
+plasma-runner-installer - KRunner plugin for installing packages
+libreflectasm-java - library that provides reflection by using code generation
+libreflectasm-java-doc - library that provides reflection by using code generation - doc
+libreoffice-kde5 - transitional package for LibreOffice "KDE 5" integration
+libreoffice-kf5 - office productivity suite -- KDE Frameworks 5 integration
+libreoffice-plasma - office productivity suite -- some Plasma integration
+librole-hasmessage-perl - Moose roles to summarize the message of an object
+libsmali-java - assembler/disassembler for Android's dex format
+libxray-scattering-perl - x-ray scattering data for the elements
+lxqt-themes - Themes for LXQt
+plasma-marble - Plasma integration for Marble
+materia-kde - Port of the popular GTK theme Materia for Plasma 5
+mdk - MIX Development Kit
+kde-plasma-desktop - KDE Plasma Desktop and minimal set of applications
+kde-standard - KDE Plasma Desktop and standard set of applications
+kde-telepathy - metapackage for installing all the KDE Telepathy components
+kde-telepathy-minimal - metapackage for installing the basic KDE Telepathy components
+milou - Dedicated search plasmoid
+miniasm - ultrafast de novo assembler for long noisy DNA sequencing reads
+monitoring-plugins-contrib - Plugins for nagios compatible monitoring systems
+nasm - General-purpose x86 assembler
+libkf5networkmanagerqt-dev - Qt wrapper for NetworkManager - devel files.
+libkf5networkmanagerqt-doc - Qt wrapper for NetworkManager - library (documentation)
+libkf5networkmanagerqt6 - Qt wrapper for NetworkManager - library
+dolphin-nextcloud - Nextcloud integration for Dolphin
+jest - Delightful JavaScript Testing
+node-webassemblyjs - Toolchain for WebAssembly
+kde-style-oxygen-qt5 - Qt decoration for the Oxygen desktop theme
+kwin-decoration-oxygen - KWin decoration for the Oxygen desktop theme
+liboxygenstyle5-5 - style library for the Oxygen desktop theme
+liboxygenstyleconfig5-5 - style library configuration for the Oxygen desktop theme
+oxygen-sounds - Sounds for the Oxygen desktop theme
+plasma-theme-oxygen - Look-and-feel for the Oxygen desktop theme
+pasmo - easy to use Z80 cross-assembler
+picard-tools - Command line tools to manipulate SAM and BAM files
+placnet - Plasmid Constellation Network project
+plasma-browser-integration - Chromium, Google Chrome, Firefox integration for Plasma
+plasma-desktop - Tools and widgets for the desktop
+plasma-desktop-data - Tools and widgets for the desktop data files
+plasma-desktop-dev - Tools and widgets for the desktop
+plasma-discover - Discover software management suite
+plasma-discover-backend-flatpak - Discover software management suite - Flatpak backend
+plasma-discover-backend-fwupd - Discover software management suite - fwupd backend
+plasma-discover-backend-snap - Discover software management suite - Snap backend
+plasma-discover-common - Discover software manager suite (common data files)
+plasma-disks - Monitor S.M.A.R.T. capable devices for imminent failure in Plasma
+libkf5plasma-dev - development files for plasma-framework
+libkf5plasma-doc - Plasma Runtime components (documentation)
+libkf5plasma5 - Plasma Runtime components
+libkf5plasmaquick5 - Plasma Runtime components
+plasma-framework - Plasma Runtime components
+plasma-gmailfeed - plasmoid that shows your Gmail feed with notifications
+plasma-integration - Qt Platform Theme integration plugins for KDE Plasma
+plasma-nano - Plasma shell for embedded devices
+kde-config-mobile-networking - Plasma mobile configuration modules
+plasma-nm - Plasma network connections management
+plasma-pa - Plasma 5 Volume controller
+plasma-sdk - IDE tailored for development of Plasma components
+plasma-systemmonitor - System monitor for the Plasma desktop
+plasma-thunderbolt - Plasma addons for managing Thunderbolt devices
+plasma-vault - Plasma applet and services for creating encrypted vaults
+plasma-wayland-protocols - Wayland protocols for Plasma
+libcolorcorrect5 - Plasma Workspace for KF5 library
+libkfontinst5 - Tools and widgets for the desktop library
+libkfontinstui5 - Tools and widgets for the desktop library
+libkworkspace5-5 - Plasma Workspace for KF5 library
+libnotificationmanager1 - Plasma Workspace for KF5 library
+libplasma-geolocation-interface5 - Plasma Workspace for KF5 library
+libtaskmanager6abi1 - Plasma Workspace for KF5 library
+libweather-ion7 - Plasma Workspace for KF5 library
+plasma-workspace - Plasma Workspace for KF5
+plasma-workspace-data - Plasma Workspace for KF5 - data files
+plasma-workspace-dev - Plasma Workspace for KF5 devel files
+plasma-workspace-wayland - Plasma Workspace for KF5 - Wayland integration
+sddm-theme-breeze - Breeze SDDM theme
+sddm-theme-debian-breeze - Debian Breeze SDDM theme
+plasma-workspace-wallpapers - Wallpapers for Plasma 5
+plasmidid - mapping-based, assembly-assisted plasmid identification tool
+plasmidomics - draw plasmids and vector maps with PostScript graphics export
+plasmidseeker - identification of known plasmids from whole-genome sequencing reads
+print-manager - printer configuration and monitoring tools
+proftmb - per-residue prediction of bacterial transmembrane beta barrels
+psensor - display graphs for monitoring hardware temperature
+python3-stdnum - Python module to handle standardized numbers and codes (Python3 version)
+python3-xstatic-jasmine - Jasmine JS XStatic support - Python 3.x
+qasconfig - ALSA configuration browser
+qashctl - mixer for ALSA's High level Control Interface
+qasmixer - ALSA mixer for the desktop
+qastools-common - QasTools common files
+libkf5qqc2desktopstyle-dev - Qt Quick Controls 2: Desktop Style
+qml-module-org-kde-qqc2desktopstyle - Qt Quick Controls 2: Desktop Style
+qt5ct - Qt5 Configuration Utility
+quakespasm - engine for iD software's Quake
+r-cran-viridis - GNU R package for color maps from matplotlib
+r-cran-viridislite - GNU R package for color maps from matplotlib (Lite Version)
+rasmol - visualization of biological macromolecules
+rasmol-doc - documentation for rasmol
+resource-agents - Cluster Resource Agents
+rss-glx - Really Slick Screensavers GLX Port
+librust-blake2-rfc-dev - Pure Rust implementation of BLAKE2 based on RFC 7693 - Rust source code
+librust-cc+jobserver-dev - Build C/C++/asm in build.rs - feature "jobserver" and 1 more
+librust-cc-dev - Build C/C++/asm in build.rs - Rust source code
+librust-console-error-panic-hook-dev - wasm32-unknown-unknown log panic hook to `console.error` - Rust source code
+librust-getrandom-dev - Retrieve random data from system source - Rust source code
+librust-libz-sys-dev - Low-level bindings to the system libz library (also known as zlib) - Rust source code
+librust-object+parity-wasm-dev - Object file formats parsing interface - feature "parity-wasm"
+librust-object+wasm-dev - Object file formats parsing interface - feature "wasm"
+librust-parity-wasm-dev - Low-level WebAssembly format library - Rust source code
+librust-rand+wasm-bindgen-dev - Randomness functionality, number generators - feature "wasm-bindgen"
+librust-rand-os+wasm-bindgen-dev - OS backed Random Number Generator - feature "wasm-bindgen"
+librust-sha2-dev - Pure Rust implementation of the SHA-2 hash function family including SHA-224, SHA-256, SHA-384, and SHA-512 - Rust source code
+librust-sha2-asm-dev - Assembly implementation of SHA-2 compression functions - Rust source code
+librust-uuid+wasm-bindgen-dev - Generate and parse UUIDs - feature "wasm-bindgen"
+librust-wasm-bindgen+default-dev - Easy support for JS and Rust interaction - feature "default"
+librust-wasm-bindgen+serde-dev - Easy support for JS and Rust interaction - feature "serde"
+librust-wasm-bindgen+serde-json-dev - Easy support for JS and Rust interaction - feature "serde_json"
+librust-wasm-bindgen+serde-serialize-dev - Easy support for JS and Rust interaction - feature "serde-serialize"
+librust-wasm-bindgen+spans-dev - Easy support for JS and Rust interaction - feature "spans"
+librust-wasm-bindgen+strict-macro-dev - Easy support for JS and Rust interaction - feature "strict-macro"
+librust-wasm-bindgen+xxx-debug-only-print-generated-code-dev - Easy support for JS and Rust interaction - feature "xxx_debug_only_print_generated_code"
+librust-wasm-bindgen-dev - Easy support for JS and Rust interaction - Rust source code
+librust-wasm-bindgen-backend+extra-traits-dev - Backend code generation of the wasm-bindgen tool - feature "extra-traits"
+librust-wasm-bindgen-backend-dev - Backend code generation of the wasm-bindgen tool - Rust source code
+librust-wasm-bindgen-macro+spans-dev - Definition of the `#[wasm_bindgen]` attribute - feature "spans"
+librust-wasm-bindgen-macro+strict-macro-dev - Definition of the `#[wasm_bindgen]` attribute - feature "strict-macro"
+librust-wasm-bindgen-macro-dev - Definition of the `#[wasm_bindgen]` attribute - Rust source code
+librust-wasm-bindgen-macro-support+extra-traits-dev - Implementation of the `#[wasm_bindgen]` attribute - feature "extra-traits"
+librust-wasm-bindgen-macro-support+spans-dev - Implementation of the `#[wasm_bindgen]` attribute - feature "spans"
+librust-wasm-bindgen-macro-support-dev - Implementation of the `#[wasm_bindgen]` attribute - Rust source code
+librust-wasm-bindgen-shared-dev - Shared support of wasm-bindgen and wasm-bindgen cli - Rust source code
+librust-wasm-bindgen-webidl-dev - Support for parsing WebIDL specific to wasm-bindgen - Rust source code
+libstd-rust-dev-wasm32 - Rust standard libraries - development files
+sasm - simple IDE for NASM, GAS and FASM assembly languages
+python-sasmodels-doc - Theoretical models for small angle scattering (documentation)
+python3-sasmodels - Theoretical models for small angle scattering (Python 3)
+sasmodels-private-libs - Theoretical models for small angle scattering (compiled models)
+scala-asm - Fork of ASM for the Scala Compiler
+ssmping - check your multicast connectivity
+t1utils - Collection of simple Type 1 font manipulation programs
+task-amharic-kde-desktop - Amharic KDE Plasma desktop
+task-arabic-kde-desktop - Arabic KDE Plasma desktop
+task-basque-kde-desktop - Basque KDE Plasma desktop
+task-belarusian-kde-desktop - Belarusian KDE Plasma desktop
+task-bengali-kde-desktop - Bengali KDE Plasma desktop
+task-bosnian-kde-desktop - Bosnian KDE Plasma desktop
+task-brazilian-portuguese-kde-desktop - Brazilian Portuguese KDE Plasma desktop
+task-british-kde-desktop - British KDE Plasma desktop
+task-bulgarian-kde-desktop - Bulgarian KDE Plasma desktop
+task-catalan-kde-desktop - Catalan KDE Plasma desktop
+task-chinese-s-kde-desktop - Simplified Chinese KDE Plasma desktop
+task-chinese-t-kde-desktop - Traditional Chinese KDE Plasma desktop
+task-croatian-kde-desktop - Croatian KDE Plasma desktop
+task-cyrillic-kde-desktop - Cyrillic KDE Plasma desktop
+task-czech-kde-desktop - Czech KDE Plasma desktop
+task-danish-kde-desktop - Danish KDE Plasma desktop
+task-dutch-kde-desktop - Dutch KDE Plasma desktop
+task-dzongkha-kde-desktop - Dzongkha KDE Plasma desktop
+task-esperanto-kde-desktop - Esperanto KDE Plasma desktop
+task-estonian-kde-desktop - Estonian KDE Plasma desktop
+task-finnish-kde-desktop - Finnish KDE Plasma desktop
+task-french-kde-desktop - French KDE Plasma desktop
+task-galician-kde-desktop - Galician KDE Plasma desktop
+task-german-kde-desktop - German KDE Plasma desktop
+task-greek-kde-desktop - Greek KDE Plasma desktop
+task-gujarati-kde-desktop - Gujarati KDE Plasma desktop
+task-hebrew-kde-desktop - Hebrew KDE Plasma desktop
+task-hindi-kde-desktop - Hindi KDE Plasma desktop
+task-hungarian-kde-desktop - Hungarian KDE Plasma desktop
+task-icelandic-kde-desktop - Icelandic KDE Plasma desktop
+task-indonesian-kde-desktop - Indonesian KDE Plasma desktop
+task-irish-kde-desktop - Irish KDE Plasma desktop
+task-italian-kde-desktop - Italian KDE Plasma desktop
+task-japanese-kde-desktop - Japanese KDE Plasma desktop
+task-kannada-kde-desktop - Kannada KDE Plasma desktop
+task-kazakh-kde-desktop - Kazakh KDE Plasma desktop
+task-kde-desktop - KDE Plasma
+task-khmer-kde-desktop - Khmer KDE Plasma desktop
+task-korean-kde-desktop - Korean KDE Plasma desktop
+task-kurdish-kde-desktop - Kurdish KDE Plasma desktop
+task-latvian-kde-desktop - Latvian KDE Plasma desktop
+task-lithuanian-kde-desktop - Lithuanian KDE Plasma desktop
+task-macedonian-kde-desktop - Macedonian KDE Plasma desktop
+task-malayalam-kde-desktop - Malayalam KDE Plasma desktop
+task-nepali-kde-desktop - Nepali KDE Plasma desktop
+task-norwegian-kde-desktop - Norwegian KDE Plasma desktop
+task-persian-kde-desktop - Persian KDE Plasma desktop
+task-polish-kde-desktop - Polish KDE Plasma desktop
+task-portuguese-kde-desktop - Portuguese KDE Plasma desktop
+task-punjabi-kde-desktop - Punjabi KDE Plasma desktop
+task-romanian-kde-desktop - Romanian KDE Plasma desktop
+task-russian-kde-desktop - Russian KDE Plasma desktop
+task-serbian-kde-desktop - Serbian KDE Plasma desktop
+task-sinhala-kde-desktop - Sinhala KDE Plasma desktop
+task-slovak-kde-desktop - Slovak KDE Plasma desktop
+task-slovenian-kde-desktop - Slovenian KDE Plasma desktop
+task-spanish-kde-desktop - Spanish KDE Plasma desktop
+task-swedish-kde-desktop - Swedish KDE Plasma desktop
+task-telugu-kde-desktop - Telugu KDE Plasma desktop environment
+task-thai-kde-desktop - Thai KDE Plasma desktop
+task-turkish-kde-desktop - Turkish KDE Plasma desktop
+task-ukrainian-kde-desktop - Ukrainian KDE Plasma desktop
+task-uyghur-kde-desktop - Uyghur KDE Plasma desktop
+task-vietnamese-kde-desktop - Vietnamese KDE Plasma desktop
+task-xhosa-kde-desktop - Xhosa KDE Plasma desktop
+tesseract-ocr-asm - tesseract-ocr language files for Assamese
+texlive-extra-utils - TeX Live: TeX auxiliary programs
+texlive-publishers - TeX Live: Publisher styles, theses, etc.
+ttf-aenigma - 465 free TrueType fonts by Brian Kent
+unicycler - hybrid assembly pipeline for bacterial genomes
+unicycler-data - hybrid assembly pipeline for bacterial genomes (data package)
+vim-syntastic - Syntax checking hacks for vim
+wabt - WebAssembly Binary Toolkit
+wasi-libc - WASI libc implementation for WebAssembly
+x2goserver-fmbindings - X2Go Server (file manager bindings)
+yasm - modular assembler with multiple syntaxes support
+elpa-yasnippet-snippets - Andrea Crotti's official YASnippet snippets
+youtube-dl - downloader of videos from YouTube and other sites
+z80asm - assembler for the Zilog Z80 microprocessor
+z80dasm - disassembler for the Zilog Z80 microprocessor
+cpl-plugin-muse-calib - ESO data reduction pipeline calibration data downloader for MUSE
+cpl-plugin-naco-calib - ESO data reduction pipeline NaCo calibration data downloader

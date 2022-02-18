@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #131516;
+   --darkreader-neutral-text: #d8d4cf;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #555b00 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #454a4d #202324;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}</style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="Content-Language" content="en-us">
+        <!-- Use title if it's in the page YAML frontmatter -->
+        <title>Learn X in Y Minutes: Scenic Programming Language Tours</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="st_files/index.css"><style class="darkreader darkreader--cors" media="screen">article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+
+
+[hidden] {
+    display: none;
+}
+
+
+
+
+
+html {
+    font-size: 100%; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+}
+
+
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+
+
+body {
+    margin: 0;
+}
+
+
+
+
+
+a:focus {
+    outline: thin dotted;
+}
+
+
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+
+
+
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.75em;
+    margin: 2.33em 0;
+}
+
+
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+
+
+dfn {
+    font-style: italic;
+}
+
+
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+
+q {
+    quotes: none;
+}
+
+
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+
+
+small {
+    font-size: 80%;
+}
+
+
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+
+
+
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+
+
+
+
+img {
+    border: 0; 
+    -ms-interpolation-mode: bicubic; 
+}
+
+
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+
+
+
+figure {
+    margin: 0;
+}
+
+
+
+
+
+form {
+    margin: 0;
+}
+
+
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+
+
+legend {
+    border: 0; 
+    padding: 0;
+    white-space: normal; 
+    *margin-left: -7px; 
+}
+
+
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; 
+    margin: 0; 
+    vertical-align: baseline; 
+    *vertical-align: middle; 
+}
+
+
+
+button,
+input {
+    line-height: normal;
+}
+
+
+
+button,
+html input[type="button"], 
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; 
+    cursor: pointer; 
+    *overflow: visible;  
+}
+
+
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; 
+    padding: 0; 
+    *height: 13px; 
+    *width: 13px; 
+}
+
+
+
+input[type="search"] {
+    -webkit-appearance: textfield; 
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; 
+    box-sizing: content-box;
+}
+
+
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+
+textarea {
+    overflow: auto; 
+    vertical-align: top; 
+}
+
+
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+
+img {
+    vertical-align: middle;
+}
+
+
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+textarea {
+    resize: vertical;
+}
+
+
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+
+.invisible {
+    visibility: hidden;
+}
+
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table; 
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+@media only screen and (min-width: 35em) {
+    
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    
+}
+
+
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; 
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; 
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+body {
+  background: #fdfeff;
+  color: #000;
+}
+
+button, select {
+  background: #eeeeee;
+  color: #222;
+  border-bottom: 2px solid #dddddd;
+}
+
+.highlight {
+  background: #eee;
+}
+.highlight .n {
+  color: #333;
+}
+
+
+.hll { background-color: #ffffcc }
+.c { color: #999988; font-style: italic } 
+.err { color: #a61717; background-color: #e3d2d2 } 
+.k { color: #000000; font-weight: bold } 
+.o { color: #000000; font-weight: bold } 
+.cm { color: #999988; font-style: italic } 
+.cp { color: #999999; font-weight: bold; font-style: italic } 
+.c1 { color: #999988; font-style: italic } 
+.cs { color: #999999; font-weight: bold; font-style: italic } 
+.gd { color: #000000; background-color: #ffdddd } 
+.ge { color: #000000; font-style: italic } 
+.gr { color: #aa0000 } 
+.gh { color: #999999 } 
+.gi { color: #000000; background-color: #ddffdd } 
+.go { color: #888888 } 
+.gp { color: #555555 } 
+.gs { font-weight: bold } 
+.gu { color: #aaaaaa } 
+.gt { color: #aa0000 } 
+.kc { color: #000000; font-weight: bold } 
+.kd { color: #000000; font-weight: bold } 
+.kn { color: #000000; font-weight: bold } 
+.kp { color: #000000; font-weight: bold } 
+.kr { color: #000000; font-weight: bold } 
+.kt { color: #445588; font-weight: bold } 
+.m { color: #009999 } 
+.s { color: #d01040 } 
+.na { color: #008080 } 
+.nb { color: #0086B3 } 
+.nc { color: #445588; font-weight: bold } 
+.no { color: #008080 } 
+.nd { color: #3c5d5d; font-weight: bold } 
+.ni { color: #800080 } 
+.ne { color: #990000; font-weight: bold } 
+.nf { color: #990000; font-weight: bold } 
+.nl { color: #990000; font-weight: bold } 
+.nn { color: #555555 } 
+.nt { color: #000080 } 
+.nv { color: #008080 } 
+.ow { color: #000000; font-weight: bold } 
+.w { color: #bbbbbb } 
+.mf { color: #009999 } 
+.mh { color: #009999 } 
+.mi { color: #009999 } 
+.mo { color: #009999 } 
+.sb { color: #d01040 } 
+.sc { color: #d01040 } 
+.sd { color: #d01040 } 
+.s2 { color: #d01040 } 
+.se { color: #d01040 } 
+.sh { color: #d01040 } 
+.si { color: #d01040 } 
+.sx { color: #d01040 } 
+.sr { color: #009926 } 
+.s1 { color: #d01040 } 
+.ss { color: #990073 } 
+.bp { color: #999999 } 
+.vc { color: #008080 } 
+.vg { color: #008080 } 
+.vi { color: #008080 } 
+.il { color: #009999 }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 22pt; }
+
+
+select {
+  border: none;
+  border-radius: 3px; }
+
+
+button {
+  margin-left: 5px;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 6px;
+  text-decoration: none; }
+  
+  button:hover {
+    background: #f5f5f5; }
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif; }
+
+
+h1, h2, h3, h4, h5, h6, p, li, hr {
+  padding: 0;
+  margin: 22pt 0 0 0;
+  line-height: 22pt; }
+
+
+li + li {
+  margin-top: 0; }
+
+
+.container {
+  max-width: 60em;
+  margin: 0px auto; }
+  @media all and (max-width: 880px) {
+    
+    .container {
+      margin: 0px 20px; } }
+
+
+#doc {
+  font-size: 14pt; }
+  
+  #doc .highlight {
+    font-family: "Ubuntu Mono", monospace;
+    line-height: 18pt;
+    display: block; }
+  
+  #doc img {
+    max-width: 100%; }
+  
+  #doc footer {
+    margin-top: 60px;
+    text-align: right;
+    color: #777; }
+
+
+.highlight {
+  background: #eee;
+  padding: 0 18pt;
+  margin-top: 22pt;
+  overflow-x: auto; }
+  
+  .highlight.c {
+    font-style: normal; }
+  
+  .highlight .c1 {
+    font-style: normal; }
+  
+  .highlight .nb, .highlight .nf, .highlight .k {
+    font-weight: 700; }
+  
+  .highlight .n {
+    color: #333; }
+
+
+table {
+  margin-top: 22pt;
+  width: 100%; }
+
+
+th, td {
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  line-height: 33pt; }
+  
+  th h1:first-child, th h2:first-child, th h3:first-child, th h4:first-child, th h5:first-child, th h6:first-child, th p:first-child, td h1:first-child, td h2:first-child, td h3:first-child, td h4:first-child, td h5:first-child, td h6:first-child, td p:first-child {
+    margin-top: 0; }
+
+
+th.name {
+  width: 50%; }
+
+
+th.lang {
+  width: 50%; }
+
+
+td.name a {
+  font-size: 1.2em;
+  font-weight: bold; }
+
+
+td.lang a {
+  background: #eee;
+  border-bottom: 2px solid #ddd;
+  border-radius: 3px;
+  padding: 0 5px;
+  text-decoration: none; }
+  
+  td.lang a:hover {
+    background: #f5f5f5; }
+  
+  td.lang a.selected {
+    background: #ff9; }
+
+@media all and (max-width: 620px) {
+  
+  tr {
+    display: block;
+    border-bottom: 3px solid #eee;
+    margin-bottom: 10px; }
+
+  
+  th.name {
+    display: block;
+    width: 100%; }
+
+  
+  th.lang {
+    display: none; }
+
+  
+  td.name {
+    display: block;
+    font-size: 16pt;
+    line-height: 24pt; }
+
+  
+  td.lang {
+    display: block;
+    text-align: right; } }
+
+.share {
+  float: right;
+  text-align: center;
+  line-height: 40px;
+  background: #eee;
+  padding: 0 20px;
+  border-radius: 3px;
+  border-bottom: 2px solid #ddd; }
+  
+  .share .sharemsg {
+    font-weight: bold;
+    display: block; }
+
+
+.lang-choice {
+  float: right; }
+
+
+.theme-choice {
+  float: right;
+  clear: right; }
+
+
+body, a, button, select, .share {
+  transition: all 300ms ease-in-out; }
+
+
+th, td {
+  transition: border-color 400ms; }
+
+
+html.dark {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   }
+  
+  html.dark body {
+    background: #11111a;
+    color: #e0e0e0; }
+  
+  html.dark a {
+    color: #49c; }
+  
+  html.dark a:visited {
+    color: #94c5e2; }
+  
+  html.dark button, html.dark select, html.dark .share, html.dark td.lang a {
+    background: #252539;
+    border-bottom: 2px solid #434367; }
+    
+    html.dark button:hover, html.dark button.selected, html.dark select:hover, html.dark select.selected, html.dark .share:hover, html.dark .share.selected, html.dark td.lang a:hover, html.dark td.lang a.selected {
+      background: #49c;
+      color: #e0e0e0; }
+  
+  html.dark button, html.dark select {
+    color: #e0e0e0; }
+  
+  html.dark button:hover {
+    background: #49c;
+    color: #fff; }
+  
+  html.dark th, html.dark td {
+    border-bottom: 1px solid #252539; }
+  @media all and (max-width: 620px) {
+    
+    html.dark tr {
+      border-bottom: 3px solid #252539; } }
+  
+  html.dark .highlight {
+    background: #252539; }
+  
+  html.dark .highlight .n {
+    color: #818181; }
+  
+  html.dark .hll {
+    background-color: #272822; }
+  
+  html.dark .c {
+    color: #75715e; }
+  
+  html.dark .err {
+    color: #960050;
+    background-color: #1e0010; }
+  
+  html.dark .k {
+    color: #66d9ef; }
+  
+  html.dark .l {
+    color: #ae81ff; }
+  
+  html.dark .n {
+    color: #f8f8f2; }
+  
+  html.dark .o {
+    color: #f92672; }
+  
+  html.dark .p {
+    color: #f8f8f2; }
+  
+  html.dark .cm {
+    color: #75715e; }
+  
+  html.dark .cp {
+    color: #75715e; }
+  
+  html.dark .c1 {
+    color: #75715e; }
+  
+  html.dark .cs {
+    color: #75715e; }
+  
+  html.dark .ge {
+    font-style: italic; }
+  
+  html.dark .gs {
+    font-weight: bold; }
+  
+  html.dark .kc {
+    color: #66d9ef; }
+  
+  html.dark .kd {
+    color: #66d9ef; }
+  
+  html.dark .kn {
+    color: #f92672; }
+  
+  html.dark .kp {
+    color: #66d9ef; }
+  
+  html.dark .kr {
+    color: #66d9ef; }
+  
+  html.dark .kt {
+    color: #66d9ef; }
+  
+  html.dark .ld {
+    color: #e6db74; }
+  
+  html.dark .m {
+    color: #ae81ff; }
+  
+  html.dark .s {
+    color: #e6db74; }
+  
+  html.dark .na {
+    color: #a6e22e; }
+  
+  html.dark .nb {
+    color: #f8f8f2; }
+  
+  html.dark .nc {
+    color: #a6e22e; }
+  
+  html.dark .no {
+    color: #66d9ef; }
+  
+  html.dark .nd {
+    color: #a6e22e; }
+  
+  html.dark .ni {
+    color: #f8f8f2; }
+  
+  html.dark .ne {
+    color: #a6e22e; }
+  
+  html.dark .nf {
+    color: #a6e22e; }
+  
+  html.dark .nl {
+    color: #f8f8f2; }
+  
+  html.dark .nn {
+    color: #f8f8f2; }
+  
+  html.dark .nx {
+    color: #a6e22e; }
+  
+  html.dark .py {
+    color: #f8f8f2; }
+  
+  html.dark .nt {
+    color: #f92672; }
+  
+  html.dark .nv {
+    color: #f8f8f2; }
+  
+  html.dark .ow {
+    color: #f92672; }
+  
+  html.dark .w {
+    color: #f8f8f2; }
+  
+  html.dark .mf {
+    color: #ae81ff; }
+  
+  html.dark .mh {
+    color: #ae81ff; }
+  
+  html.dark .mi {
+    color: #ae81ff; }
+  
+  html.dark .mo {
+    color: #ae81ff; }
+  
+  html.dark .sb {
+    color: #e6db74; }
+  
+  html.dark .sc {
+    color: #e6db74; }
+  
+  html.dark .sd {
+    color: #e6db74; }
+  
+  html.dark .s2 {
+    color: #e6db74; }
+  
+  html.dark .se {
+    color: #ae81ff; }
+  
+  html.dark .sh {
+    color: #e6db74; }
+  
+  html.dark .si {
+    color: #e6db74; }
+  
+  html.dark .sx {
+    color: #e6db74; }
+  
+  html.dark .sr {
+    color: #e6db74; }
+  
+  html.dark .s1 {
+    color: #e6db74; }
+  
+  html.dark .ss {
+    color: #e6db74; }
+  
+  html.dark .bp {
+    color: #f8f8f2; }
+  
+  html.dark .vc {
+    color: #f8f8f2; }
+  
+  html.dark .vg {
+    color: #f8f8f2; }
+  
+  html.dark .vi {
+    color: #f8f8f2; }
+  
+  html.dark .il {
+    color: #ae81ff; }
+  
+  html.dark .gu {
+    color: #75715e; }
+  
+  html.dark .gd {
+    color: #f92672; }
+  
+  html.dark .gi {
+    color: #a6e22e; }</style><style class="darkreader darkreader--sync" media="screen"></style>
+
+        <link rel="canonical" href="https://learnxinyminutes.com/docs/set-theory/">
+        <script src="st_files/ga.js"></script><script>
+            var THEME_KEY = "lxiym_theme";
+            function set_theme(theme) {
+                var el = document.getElementsByTagName("html")[0];
+                if (!el) {
+                  return;
+                }
+
+                if (theme === "dark" ) {
+                    el.className = "dark";
+                } else {
+                    el.className = "light";
+                }
+
+                localStorage.setItem(THEME_KEY, theme);
+            }
+
+            function load_theme() {
+              var theme = localStorage.getItem(THEME_KEY);
+              if (theme) {
+                set_theme(theme);
+              }
+            }
+
+            // Attempt immediate application of html style
+            load_theme();
+
+            // Backup: do it onload. Will flash, but better than nothing.
+            window.addEventListener("load", function(){
+              load_theme();
+            });
+        </script>
+    <meta name="darkreader" content="9f4ed23fb116f1c3546608640b0a43e4"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+a[href="https://coinmarketcap.com/"] > svg[width="94"][height="16"] > path {
+    fill: var(--darkreader-neutral-text) !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1 {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #0f3a48 !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style></head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="share">
+    <span class="sharemsg">
+      <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flearnxinyminutes.com%2Fdocs%2Fset-theory%2F&amp;text=Learn+X+in+Y+minutes%2C+where+X%3DSet+theory">
+        Share this page
+      </a></span>
+
+      <span class="st_facebook_large" displaytext="Facebook"></span>
+      <span class="st_twitter_large" displaytext="Tweet"></span>
+  </div>
+  <div class="theme-choice">
+    <label id="theme-label">Select theme:</label>
+    <button type="button" aria-labelledby="theme-label" onclick="set_theme('light');">light</button>
+    <button type="button" aria-labelledby="theme-label" onclick="set_theme('dark');">dark</button>
+  </div>
+  <h1><a href="https://learnxinyminutes.com/">Learn X in Y minutes</a></h1>
+  <h2>Where X=Set theory</h2>
+  <div id="doc">
+    <p>Set theory is a branch of mathematics that studies sets, their operations, and their properties.</p>
+
+<ul>
+<li>A set is a collection of disjoint items.</li>
+</ul>
+
+<h2>Basic symbols</h2>
+
+<h3>Operators</h3>
+
+<ul>
+<li>the union operator, <code>∪</code>, pronounced “cup”, means “or”;</li>
+<li>the intersection operator, <code>∩</code>, pronounced “cap”, means “and”;</li>
+<li>the exclusion operator, <code>\</code>, means “without”;</li>
+<li>the compliment operator, <code>'</code>, means “the inverse of”;</li>
+<li>the cross operator, <code>×</code>, means “the Cartesian product of”.</li>
+</ul>
+
+<h3>Qualifiers</h3>
+
+<ul>
+<li>the colon qualifier, <code>:</code>, means “such that”;</li>
+<li>the membership qualifier, <code>∈</code>, means “belongs to”;</li>
+<li>the subset qualifier, <code>⊆</code>, means “is a subset of”;</li>
+<li>the proper subset qualifier, <code>⊂</code>, means “is a subset of but is not equal to”.</li>
+</ul>
+
+<h3>Canonical sets</h3>
+
+<ul>
+<li><code>∅</code>, the empty set, i.e. the set containing no items;</li>
+<li><code>ℕ</code>, the set of all natural numbers;</li>
+<li><code>ℤ</code>, the set of all integers;</li>
+<li><code>ℚ</code>, the set of all rational numbers;</li>
+<li><code>ℝ</code>, the set of all real numbers.</li>
+</ul>
+
+<p>There are a few caveats to mention regarding the canonical sets:
+1. Even though the empty set contains no items, the empty set is a 
+subset of itself (and indeed every other set);
+2. Mathematicians generally do not universally agree on whether zero is a
+ natural number, and textbooks will typically explicitly state whether 
+or not the author considers zero to be a natural number.</p>
+
+<h3>Cardinality</h3>
+
+<p>The cardinality, or size, of a set is determined by the number of 
+items in the set. The cardinality operator is given by a double pipe, <code>|...|</code>.</p>
+
+<p>For example, if <code>S = { 1, 2, 4 }</code>, then <code>|S| = 3</code>.</p>
+
+<h3>The Empty Set</h3>
+
+<ul>
+<li>The empty set can be constructed in set builder notation using impossible conditions, e.g. <code>∅ = { x : x ≠ x }</code>, or <code>∅ = { x : x ∈ N, x &lt; 0 }</code>;</li>
+<li>the empty set is always unique (i.e. there is one and only one empty set);</li>
+<li>the empty set is a subset of all sets;</li>
+<li>the cardinality of the empty set is 0, i.e. <code>|∅| = 0</code>.</li>
+</ul>
+
+<h2>Representing sets</h2>
+
+<h3>Literal Sets</h3>
+
+<p>A set can be constructed literally by supplying a complete list of objects contained in the set. For example, <code>S = { a, b, c, d }</code>.</p>
+
+<p>Long lists may be shortened with ellipses as long as the context is clear. For example, <code>E = { 2, 4, 6, 8, ... }</code>
+ is clearly the set of all even numbers, containing an infinite number 
+of objects, even though we’ve only explicitly written four of them.</p>
+
+<h3>Set Builder</h3>
+
+<p>Set builder notation is a more descriptive way of constructing a set. It relies on a <em>subject</em> and a <em>predicate</em> such that <code>S = { subject : predicate }</code>. For example,</p>
+<div class="highlight"><pre><span></span>A = { x : x is a vowel } = { a, e, i, o, u, y}
+B = { x : x ∈ N, x &lt; 10 } = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }
+C = { x : x = 2k, k ∈ N } = { 0, 2, 4, 6, 8, ... }
+</pre></div>
+<p>Sometimes the predicate may “leak” into the subject, e.g.</p>
+<div class="highlight"><pre><span></span>D = { 2x : x ∈ N } = { 0, 2, 4, 6, 8, ... }
+</pre></div>
+<h2>Relations</h2>
+
+<h3>Membership</h3>
+
+<ul>
+<li>If the value <code>a</code> is contained in the set <code>A</code>, then we say <code>a</code> belongs to <code>A</code> and represent this symbolically as <code>a ∈ A</code>.</li>
+<li>If the value <code>a</code> is not contained in the set <code>A</code>, then we say <code>a</code> does not belong to <code>A</code> and represent this symbolically as <code>a ∉ A</code>.</li>
+</ul>
+
+<h3>Equality</h3>
+
+<ul>
+<li>If two sets contain the same items then we say the sets are equal, e.g. <code>A = B</code>.</li>
+<li>Order does not matter when determining set equality, e.g. <code>{ 1, 2, 3, 4 } = { 2, 3, 1, 4 }</code>.</li>
+<li>Sets are disjoint, meaning elements cannot be repeated, e.g. <code>{ 1, 2, 2, 3, 4, 3, 4, 2 } = { 1, 2, 3, 4 }</code>.</li>
+<li>Two sets <code>A</code> and <code>B</code> are equal if and only if <code>A ⊆ B</code> and <code>B ⊆ A</code>.</li>
+</ul>
+
+<h2>Special Sets</h2>
+
+<h3>The Power Set</h3>
+
+<ul>
+<li>Let <code>A</code> be any set. The set that contains all possible subsets of <code>A</code> is called a “power set” and is written as <code>P(A)</code>. If the set <code>A</code> contains <code>n</code> elements, then <code>P(A)</code> contains <code>2^n</code> elements.</li>
+</ul>
+<div class="highlight"><pre><span></span>P(A) = { x : x ⊆ A }
+</pre></div>
+<h2>Set operations among two sets</h2>
+
+<h3>Union</h3>
+
+<p>Given two sets <code>A</code> and <code>B</code>, the union of the two sets are the items that appear in either <code>A</code> or <code>B</code>, written as <code>A ∪ B</code>.</p>
+<div class="highlight"><pre><span></span>A ∪ B = { x : x ∈ A ∪ x ∈ B }
+</pre></div>
+<h3>Intersection</h3>
+
+<p>Given two sets <code>A</code> and <code>B</code>, the intersection of the two sets are the items that appear in both <code>A</code> and <code>B</code>, written as <code>A ∩ B</code>.</p>
+<div class="highlight"><pre><span></span>A ∩ B = { x : x ∈ A, x ∈ B }
+</pre></div>
+<h3>Difference</h3>
+
+<p>Given two sets <code>A</code> and <code>B</code>, the set difference of <code>A</code> with <code>B</code> is every item in <code>A</code> that does not belong to <code>B</code>.</p>
+<div class="highlight"><pre><span></span>A \ B = { x : x ∈ A, x ∉ B }
+</pre></div>
+<h3>Symmetrical difference</h3>
+
+<p>Given two sets <code>A</code> and <code>B</code>, the symmetrical difference is all items among <code>A</code> and <code>B</code> that doesn’t appear in their intersections.</p>
+<div class="highlight"><pre><span></span>A △ B = { x : ((x ∈ A) ∩ (x ∉ B)) ∪ ((x ∈ B) ∩ (x ∉ A)) }
+
+A △ B = (A \ B) ∪ (B \ A)
+</pre></div>
+<h3>Cartesian product</h3>
+
+<p>Given two sets <code>A</code> and <code>B</code>, the cartesian product between <code>A</code> and <code>B</code> consists of a set containing all combinations of items of <code>A</code> and <code>B</code>.</p>
+<div class="highlight"><pre><span></span>A × B = { (x, y) | x ∈ A, y ∈ B }
+</pre></div>
+    <hr>
+    <p>Got a suggestion? A correction, perhaps? <a href="https://github.com/adambard/learnxinyminutes-docs/issues/new">Open an Issue</a> on the Github Repo, or make a <a href="https://github.com/adambard/learnxinyminutes-docs/edit/master/set-theory.html.markdown">pull request</a> yourself!
+    </p>
+    <p class="contributed">
+    Originally contributed by , and updated by <a href="https://github.com/adambard/learnxinyminutes-docs/blame/master/set-theory.html.markdown">6 contributor(s)</a>.
+    </p>
+
+    <footer>
+    <a style="float: left" rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="st_files/88x31.png"></a>
+    <p>
+    © 2021
+        
+    </p>
+
+    <p>
+
+    </p></footer>
+  </div>
+
+        </div>
+
+        <script src="st_files/jquery.js"></script>
+        <script src="st_files/script.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-3525624-21'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    
+
+</body></html>

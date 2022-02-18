@@ -1,0 +1,14 @@
+breathe-doc - Sphinx autodox support for languages with doxygen support (documentation)
+python3-breathe - Sphinx autodox support for languages with doxygen support (Python 3)
+caffe-doc - Caffe's doxygen docs and examples
+libclipper-doc - doxygen generated documentation for libclipper
+doxygen - Documentation system for C, C++, Java, Python and other languages
+doxygen-doc - Documentation for doxygen
+doxygen-doxyparse - multi-language source code parser based on Doxygen
+doxygen-gui - GUI configuration tool for doxygen
+doxygen-latex - Documentation system for C, C++, Java, Python and other languages
+libdoxygen-filter-perl - Methods for pre-filtering Perl code for Doxygen
+libodsstream-doc - doxygen documentation of the ODSstream library
+doxygen2man - generate man pages from Doxygen XML files
+lmdb-doc - Lightning Memory-Mapped Database doxygen documentation
+liblog4cplus-doc - C++ logging API modeled after the Java log4j API - doxygen documentation
